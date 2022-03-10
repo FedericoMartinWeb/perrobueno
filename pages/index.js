@@ -1,9 +1,12 @@
-import Head from 'next/head'
+import React from 'react'
 
-import style from '../styles/Home.module.scss'
+// Component
+import { Layout } from '../components'
 
 export default function Home() {
     return (
-        <h1 className={style.heading1}>Homepage</h1>
+        <Layout>
+            asdasd
+        </Layout>
     )
 }

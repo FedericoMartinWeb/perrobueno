@@ -1,0 +1,61 @@
+.main_nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2.7rem 3.7rem;
+    z-index: 10;
+
+    .main_nav__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        padding: 2.7rem 3.7rem;
+        transform: translateX(100%);
+        transition: transform .3s ease-in-out;
+        z-index: 11;
+
+        &.active{
+            transform: translateX(0);
+        }
+
+        .close{
+            position: absolute;
+            top: 3rem;
+            right: 3.7rem;
+
+            svg{
+                color: #fff;
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .logo{
+        width: 8.2rem;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: container;
+            object-position: center center;
+        }
+    }
+
+    .burguer{
+        svg{
+            color: #fff;
+            font-size: 3rem;
+        }
+    }
+}
+

@@ -1,5 +1,5 @@
 import '../styles/globals.scss'
-import '../styles/normalize.scss'
+import '../styles/reset.scss'
 
 function MyApp({ Component, pageProps }) {
     return <Component {...pageProps} />

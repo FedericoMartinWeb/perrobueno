@@ -1,19 +1,11 @@
-// import Navbar from "./Navbar";
-// import Footer from "./Footer";
-// import Aside from "./Aside";
-// import SideTitle from "./SideTitle";
-// import Boxes from "./Boxes";
-// import BoxItem from "./BoxItem";
-// import SubTitle from "./SubTitle";
-// import PopUp from "./PopUp";
+import Layout from "./layout/Layout";
+import Nav from "./layout/Nav";
+import Footer from "./layout/Footer";
+import Hero from "./layout/Hero";
 
-// export {
-//     Navbar,
-//     Footer,
-//     Aside,
-//     SideTitle,
-//     Boxes,
-//     BoxItem,
-//     SubTitle,
-//     PopUp
-// };
+export {
+    Layout,
+    Nav,
+    Footer,
+    Hero
+}
