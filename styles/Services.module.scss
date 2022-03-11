@@ -1,0 +1,55 @@
+@import './vars';
+@import './mixins';
+
+.services{
+    margin-top: 9.7rem;
+
+    .wrapper{
+        padding: 0;
+        
+        .content{
+            padding: 0 2rem;
+
+            h2, p{
+                color: $mainBlack;
+                text-align: center;
+            }
+
+            h2{
+                margin-bottom: 4rem;
+            }
+
+            p{
+                margin-bottom: 4rem;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .slide{
+            margin-top: 7.7rem;
+
+            .splide{
+               border-radius: 2.4rem;
+
+               img{
+                    border-radius: 2.4rem;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top center;
+                }
+
+                .splide__arrow{
+                     background: red !important;
+                }
+            }
+
+            
+        }
+    }
+
+    
+}

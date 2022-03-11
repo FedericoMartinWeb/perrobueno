@@ -5,23 +5,28 @@ export const homepage = {
             "services": {
                 "id": 1,
                 "title": "Servicios",
-                "description": "PerroBueno fue creado por amantes de los animales para darles un servicio personalizado. Es un lugar especial para que disfruten mientras tú realizas tus obligaciones o te vas a tus vacaciones deseadas y no puedes llevarle contigo.\n\nContamos con un lugar apropiado para poder tener a los perros como en casa, con espacio suficiente e instalaciones preparadas para todo tipo de perros (piscina incluida en verano).",
+                "descriptionFirst": "PerroBueno fue creado por amantes de los animales para darles un servicio personalizado. Es un lugar especial para que disfruten mientras tú realizas tus obligaciones o te vas a tus vacaciones deseadas y no puedes llevarle contigo.",
+                "descriptionSecond": "Contamos con un lugar apropiado para poder tener a los perros como en casa, con espacio suficiente e instalaciones preparadas para todo tipo de perros (piscina incluida en verano).",
                 "slider": [
                     {
                         "id": 1,
-                        "alt": "perrobueno1"
+                        "alt": "perrobueno1",
+                        "image": 'perro_3'
                     },
                     {
                         "id": 2,
-                        "alt": "perrobueno2"
+                        "alt": "perrobueno2",
+                        "image": 'perro_5'
                     },
                     {
                         "id": 3,
-                        "alt": "perrobueno3"
+                        "alt": "perrobueno3",
+                        "image": 'educacion2'
                     },
                     {
                         "id": 4,
-                        "alt": "perrobueno4"
+                        "alt": "perrobueno4",
+                        "image": 'educacion3'
                     }
                 ]
             },
