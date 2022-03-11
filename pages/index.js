@@ -1,12 +1,25 @@
 import React from 'react'
 
-// Component
-import { Layout } from '../components'
+// Data
+import { homepage } from '../data/homepage'
 
-export default function Home() {
+// Components
+import { Layout, Services } from '../components'
+
+export async function getStaticProps() {
+    return {
+        props: {
+            homepage: homepage.data.attributes,
+        }
+    }
+}
+
+export default function Home({ homepage }) {
+    console.log(homepage);
+
     return (
         <Layout>
-            asdasd
+            <Services services={homepage.services} />
         </Layout>
     )
 }

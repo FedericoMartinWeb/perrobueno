@@ -35,7 +35,7 @@ const Nav = () => {
                         <li><a href='#'>Guarderia</a></li>
                         <li><a href='#'>Educacion</a></li>
                         <li><a href='#'>Peluqueria</a></li>
-                        <li><Link href='notnow'><a>Tarifas</a></Link></li>
+                        {/* <li><Link href='notnow'><a>Tarifas</a></Link></li> */}
                         <li><a href='#'>Contacto</a></li>
                     </ul>
                 </div>
