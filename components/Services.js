@@ -33,7 +33,7 @@ const Services = ({ services }) => {
 
     const splideControls = () => (
         <div class="splide__arrows">
-            <button class="splide__arrow splide__arrow--prev" type="button" aria-controls="splide01-track" aria-label="Previous slide" disabled="">
+            <button className={`${styles.splide__arrow} splide__arrow--prev`} type="button" aria-controls="splide01-track" aria-label="Previous slide" disabled="">
                 <FaChevronLeft />
             </button>
             <button class="splide__arrow splide__arrow--next" type="button" aria-controls="splide01-track" aria-label="Next slide">
