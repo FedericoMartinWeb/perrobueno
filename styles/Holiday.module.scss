@@ -1,0 +1,37 @@
+@import './vars';
+@import './mixins';
+
+.holiday{
+    background-color: $mainRed;
+    position: relative;
+    padding-top: 7.4rem;
+    padding-bottom: 9rem;
+    margin-top: 7.5rem;
+
+    .wrapper{
+
+        figure{
+            text-align: center;
+            width: 100%;
+            margin-bottom: 2rem;
+
+            img{
+                width: 9.5rem;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        
+        h2{
+            font-size: 4.5rem;
+            line-height: 6.4rem;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        p{
+            color: $regWhite;
+            text-align: center;
+        }
+    }
+}

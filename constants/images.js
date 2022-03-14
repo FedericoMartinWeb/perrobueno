@@ -15,6 +15,8 @@ import teaming from '../assets/images/teaming.png'
 import teaming2 from '../assets/images/teaming2.png'
 import educacion from '../assets/images/educacion.webp'
 import educacion2 from '../assets/images/educacion2.webp'
+import star from '../assets/images/star.png'
+import google from '../assets/images/google.svg'
 
 export default {
     educacion3,
@@ -33,5 +35,7 @@ export default {
     teaming,
     teaming2,
     educacion,
-    educacion2
+    educacion2,
+    star,
+    google
 }

@@ -1,5 +1,8 @@
 import React from 'react'
 
+// Components
+import { HalfCircle } from '../'
+
 // Styles
 import styles from '../../styles/Hero.module.scss'
 
@@ -16,7 +19,7 @@ const Hero = () => {
                 <img src={images.perrobuenofoto.src} alt="hero" />
             </figure>
 
-            <div className={styles.hero__content}>
+            <div className={styles.content}>
                 <h1>Bienvenido a PERROBUENO Madrid</h1>
                 <h3>¡Tu perro al cole!</h3>
                 <button className={styles.hero__chevron}>
@@ -24,8 +27,7 @@ const Hero = () => {
                 </button>
             </div>
 
-
-            <span className='half_circle'></span>
+            <HalfCircle color='rgba(255,252,244,1)' />
         </header>
     )
 }

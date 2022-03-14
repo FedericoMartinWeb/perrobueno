@@ -4,7 +4,7 @@ import React from 'react'
 import { homepage } from '../data/homepage'
 
 // Components
-import { Layout, Services } from '../components'
+import { Layout, Services, HomeVets, ShowCase, Holiday, Reviews } from '../components'
 
 export async function getStaticProps() {
     return {
@@ -15,11 +15,16 @@ export async function getStaticProps() {
 }
 
 export default function Home({ homepage }) {
-    console.log(homepage);
 
     return (
         <Layout>
             <Services services={homepage.services} />
+            <HomeVets homevets={homepage.homevets} />
+            {homepage.showcase.map(item => (
+                <ShowCase key={item.id} showcase={item} />
+            ))}
+            <Holiday holiday={homepage.holiday} />
+            <Reviews reviews={homepage.reviews} />
         </Layout>
     )
 }

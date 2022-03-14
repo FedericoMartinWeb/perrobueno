@@ -32,27 +32,30 @@ export const homepage = {
             },
             "homevets": {
                 "id": 1,
-                "logoname": "homevets",
+                "logoname": "logoblanco",
                 "description": "Home vets by Bigvete SL con sus vehículos de atención a domicilio, totalmente equipados ofrece TODOS los servicios veterinarios para tu mascota.",
-                "videoUrl": "yotubeasdasdasd"
+                "videoUrl": "https://www.youtube.com/embed/yPsPWXjjxhk?rel=0&amp;showinfo=0"
             },
             "showcase": [
                 {
                     "id": 1,
                     "title": "Guardería",
                     "description": "Un miembro de nuestro equipo estará en todo momento con ellos para guiar los juegos, vigilar que todo vaya bien y que ningún perro sea excluido. \n\nNos encargamos de controlar el estado vacunal de todos los perros que acudan a nuestro centro para asegurarnos de que todos están sanos y seguros. Hacemos traslado puerta a puerta cada mañana con una ruta fija desde primera hora ya estamos en ruta canina para que pasen la mayor cantidad de tiempo haciendo ejercicio.",
+                    "image": "educacion2",
                     "altImage": "dogshowcase1"
                 },
                 {
                     "id": 2,
                     "title": "Educación",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.",
+                    "image": "perro_5",
                     "altImage": "dogshowcase2"
                 },
                 {
                     "id": 3,
                     "title": "Peluquería",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.",
+                    "image": "educacion3",
                     "altImage": "dogshowcase3"
                 }
             ],
@@ -82,6 +85,12 @@ export const homepage = {
                     "imageName": "pedrito4"
                 }
             ],
+            "holiday": {
+                "id": 1,
+                "logoName": "happyface",
+                "title": "¡Tu mascota de vacaciones!",
+                "description": "En PERROBUENO no hacemos distinción de razas, solo nos importa que tu perro sea feliz!"
+            },
             "teaming": {
                 "id": 1,
                 "logoName": "corazon",

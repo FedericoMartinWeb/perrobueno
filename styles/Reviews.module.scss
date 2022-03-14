@@ -1,0 +1,65 @@
+@import './vars';
+@import './mixins';
+
+.reviews{
+    padding-top: 5.6rem;
+
+    .wrapper{
+        padding: 0;
+
+        .content{
+            padding-left: 2rem;
+
+            figure{
+                width: 100%;
+                margin-bottom: 4.5rem;
+
+                img{
+                    width: 9rem;
+                    height: 9rem;
+                    object-fit: contain;
+                }
+            }
+
+            h2{
+                color: $mainBlack;
+            }
+
+            .stars{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                span{
+                    display: inline-block;
+                    font-size: 3.6rem;
+                    line-height: 4.7rem;
+                    font-weight: bold;
+                    color: $mainBlack;
+                    margin-right: .5rem;
+                }
+
+                .star{
+                    margin-bottom: 0;
+
+                   img{
+                       width: 3.5rem;
+                       height: 3.5rem;
+                       padding-right: 0.3rem;
+                   }
+                }
+            }
+        }
+
+        .cards{
+            padding: 0 1.2rem;
+
+            .splide{
+                .splide__arrows{
+
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
