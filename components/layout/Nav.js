@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 // Styles
@@ -13,12 +13,27 @@ import images from '../../constants/images'
 const Nav = () => {
 
     const [isActive, setIsActive] = useState(false);
-    const handleMenu = () => setIsActive(!isActive);
+    const [headerClassName, setHeaderClassName] = useState("");
+
     const menuClass = `${isActive ? `${styles.menu} ${styles.active}` : styles.menu}`;
+
+    const handleMenu = () => setIsActive(!isActive);
+
+    const handleScroll = headerClassName => {
+        if (headerClassName !== "menuscroll" && window.pageYOffset > 0) {
+            setHeaderClassName("menuscroll");
+        } else if (headerClassName === "menuscroll" && window.pageYOffset <= 0) {
+            setHeaderClassName("");
+        }
+    }
+
+    useEffect(() => {
+        window.onscroll = () => handleScroll(headerClassName);
+    }, [headerClassName]);
 
     return (
 
-        <nav className={`container ${styles.main_nav}`} >
+        <nav className={`container ${styles.main_nav} ${styles.headerClassName}`} >
             <div className={`row ${styles.main_nav__wrapper}`}>
 
                 <a href='#' className={styles.logo}>
