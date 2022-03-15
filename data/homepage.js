@@ -62,27 +62,45 @@ export const homepage = {
             "reviews": [
                 {
                     "id": 1,
-                    "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq o eiusmod tempor incididunt ut labore et dolore magna a...",
-                    "name": "pedrito",
-                    "imageName": "pedrito1"
+                    "review": "Los mejores !! Mi perrita lleva 3 años yendo a Perrobueno y siempre vuelve a casa contentísima! Coty y su equipo cuidan los perros como son los suyos - 1000% recomendado!",
+                    "name": "Adrienne",
+                    "imageName": "Adrienne",
+                    "image": 'review1'
                 },
                 {
                     "id": 2,
-                    "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq o eiusmod tempor incididunt ut labore et dolore magna a...",
-                    "name": "pedrito2",
-                    "imageName": "pedrito2"
+                    "review": "Cala vuelve encantada de la guarde, no quiere bajarse de la furgo!!!. Muy cariñosos con los peludos, muy bien atendidos. Super puntuales con el horario de recogida. Muy recomendable.",
+                    "name": "Patricia",
+                    "imageName": "Patricia",
+                    "image": 'review2'
                 },
                 {
                     "id": 3,
-                    "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq o eiusmod tempor incididunt ut labore et dolore magna a...",
-                    "name": "pedrito3",
-                    "imageName": "pedrito3"
+                    "review": "Brida llega siempre feliz, feliz, feliz y agotada de jugar toda la mañana. El personal súper cariñoso y profesional!",
+                    "name": "Esther",
+                    "imageName": "Esther",
+                    "image": 'review3'
                 },
                 {
                     "id": 4,
-                    "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq o eiusmod tempor incididunt ut labore et dolore magna a...",
-                    "name": "pedrito4",
-                    "imageName": "pedrito4"
+                    "review": "Las mejores vacaciones de mis peques. El mejor sitio de Madrid,  te los recogen en la puerta de casa y te los entregan también en casa. Gracias equipo de Perrobueno",
+                    "name": "Monica",
+                    "imageName": "Monica",
+                    "image": 'review4'
+                },
+                {
+                    "id": 5,
+                    "review": "Estoy súper encantada con el trato hacia nuestro Shadow y sobre todo con el trato que nos da y la cordialidad de Iván 👏🏼👏🏼👏🏼👏🏼",
+                    "name": "Marta",
+                    "imageName": "Marta",
+                    "image": 'review5'
+                },
+                {
+                    "id": 6,
+                    "review": "Desde el primer día, Jojo llega encantado. Al segundo día ya ni se pensó si entrar en la jaula: se metió de un salto. Y a la vuelta se queda llorando mientras se va la furgoneta",
+                    "name": "Aida",
+                    "imageName": "Aida",
+                    "image": 'review6'
                 }
             ],
             "holiday": {

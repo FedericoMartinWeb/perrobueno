@@ -1,0 +1,71 @@
+@import './vars';
+@import './mixins';
+
+.card{
+    position: relative;
+    background-color: $regWhite;
+    width: 100%;
+    max-width: 35rem;
+    margin: 0 auto;
+    padding-top: 4rem;
+    border-radius: 2.4rem;
+    border-top: 1px solid rgba(112, 112, 112, 0.16);
+    border-right: 1px solid rgba(112, 112, 112, 0.16);
+    border-left: 1px solid rgba(112, 112, 112, 0.16);
+    box-shadow: 0px 3px 6px rgba(102, 102, 102, 0.21);
+
+    p{
+        padding: 0 3.5rem;
+        height: 22rem;
+        max-height: 22rem;
+        overflow-y: auto;
+    }
+
+    .content{
+        background-color: #979797;
+        margin-top: 2rem;
+        position: relative;
+        border-radius: 0 0 2.4rem 2.4rem;
+        padding: 0 3.5rem;
+        padding-bottom: 4rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .card__circle{
+            background-color: #979797;
+            bottom: auto;
+            top: -3.2rem;
+            border-top-left-radius: 50% 100%;
+            border-top-right-radius: 50% 100%;
+        }
+
+        .reviewimg{
+            width: 5rem;
+
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .name{
+            font-size: 2.5rem;
+            line-height: 3.6rem;
+            color: $regWhite;
+            padding-right: 3.2rem;
+            padding-left: 3rem;
+
+            .star{
+                width: 2.4rem;
+                display: flex;
+                justify-content: flex-start;
+
+                img{
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

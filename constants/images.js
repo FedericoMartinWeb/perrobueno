@@ -17,6 +17,12 @@ import educacion from '../assets/images/educacion.webp'
 import educacion2 from '../assets/images/educacion2.webp'
 import star from '../assets/images/star.png'
 import google from '../assets/images/google.svg'
+import review1 from '../assets/images/reviews/review1.png'
+import review2 from '../assets/images/reviews/review2.png'
+import review3 from '../assets/images/reviews/review3.png'
+import review4 from '../assets/images/reviews/review4.png'
+import review5 from '../assets/images/reviews/review5.png'
+import review6 from '../assets/images/reviews/review6.png'
 
 export default {
     educacion3,
@@ -37,5 +43,11 @@ export default {
     educacion,
     educacion2,
     star,
-    google
+    google,
+    review1,
+    review2,
+    review3,
+    review4,
+    review5,
+    review6
 }

@@ -43,6 +43,8 @@ p{
     padding: 0 2rem;
 }
 
+// Half Circle
+
 .half_circle{
     position: absolute;
     bottom: 0;
@@ -65,4 +67,24 @@ p{
 .half_circle.top{
     bottom: auto;
     top: 0;
+}
+
+// Splide Pagination
+
+.splide__pagination__page{
+    background: #C9C8C8 !important;
+    width: 10px !important;
+    height: 10px !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+    margin-right: 2rem !important;
+}
+
+.splide__pagination li:last-child .splide__pagination__page{
+    margin-right: 0 !important;
+}
+
+.splide__pagination__page.is-active{
+    background: $mainBlack !important;
+    transform: scale(1) !important;
 }
