@@ -23,7 +23,7 @@ const Reviews = ({ reviews }) => {
         perPage: 1,
         arrows: 2,
         perMove: 1,
-        height: '43rem',
+        height: '45rem',
         gap: '13px',
         breakpoints: {
             1024: {

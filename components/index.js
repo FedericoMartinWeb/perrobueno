@@ -9,6 +9,8 @@ import ShowCase from "./ShowCase";
 import Holiday from "./Holiday";
 import Reviews from "./Reviews";
 import ReviewCard from "./ReviewCard";
+import Teaming from "./Teaming";
+import Contact from "./Contact";
 
 export {
     Layout,
@@ -21,5 +23,7 @@ export {
     ShowCase,
     Holiday,
     Reviews,
-    ReviewCard
+    ReviewCard,
+    Teaming,
+    Contact
 }

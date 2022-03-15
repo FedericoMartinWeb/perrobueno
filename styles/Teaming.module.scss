@@ -1,0 +1,28 @@
+@import './vars';
+@import './mixins';
+
+.teaming{
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+
+    .wrapper{
+        text-align: center;
+
+        .logo{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 3.3rem;
+
+            img{
+                width: 14.2rem;
+                object-fit: contain;
+            }
+        }
+
+        h2{
+            color: $mainBlack;
+            font-weight: 600;
+            margin-bottom: 4rem;
+        }
+    }
+}

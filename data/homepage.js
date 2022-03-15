@@ -111,9 +111,9 @@ export const homepage = {
             },
             "teaming": {
                 "id": 1,
-                "logoName": "corazon",
+                "logoName": "teaming2",
                 "title": "Únete a Nuestro Teaming",
-                "description": "Dona 1€ al mes a mi Grupo Teaming\nEsterilización a perros PPP"
+                "description": "Dona 1€ al mes a mi Grupo Teaming Esterilización a perros PPP"
             },
             "contact": {
                 "id": 1,
