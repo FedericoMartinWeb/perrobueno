@@ -19,11 +19,12 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: red;
+        background-color: rgba(red, .8);
         padding: 2.7rem 3.7rem;
         transform: translateX(100%);
         transition: transform .3s ease-in-out;
         z-index: 11;
+        padding-top: 3rem;
 
         &.active{
             transform: translateX(0);
@@ -37,6 +38,18 @@
             svg{
                 color: #fff;
                 font-size: 3rem;
+            }
+        }
+
+        ul{
+            background-color: green;
+            
+            li{
+                margin-bottom: 2rem;
+
+                a.active{
+                    background-color: pink;
+                }
             }
         }
     }

@@ -42,7 +42,7 @@ const Services = ({ services }) => {
     );
 
     return (
-        <section className={`container ${styles.services}`}>
+        <section id='services' className={`container ${styles.services}`}>
             <div className={`row ${styles.wrapper}`}>
 
                 <article className={styles.content}>

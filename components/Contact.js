@@ -8,7 +8,7 @@ import { HalfCircle } from '../components/'
 
 const Contact = () => {
     return (
-        <section className={`container ${styles.contact}`}>
+        <section id='contact' className={`container ${styles.contact}`}>
 
             <HalfCircle className={styles.half} color='#4344C3' top up />
 
