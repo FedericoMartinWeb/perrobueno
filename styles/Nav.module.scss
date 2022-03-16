@@ -1,3 +1,6 @@
+@import './vars';
+@import './mixins';
+
 .main_nav{
     position: fixed;
     top: 0;
@@ -5,6 +8,7 @@
     width: 100%;
     padding: 2.7rem 3.7rem;
     z-index: 10;
+    transition: padding .3s ease-in-out;
 
     .main_nav__wrapper{
         display: flex;
@@ -67,8 +71,21 @@
 
     .burguer{
         svg{
-            color: #fff;
+            color: $regWhite;
             font-size: 3rem;
+        }
+    }
+}
+
+.scrolled{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: $backgroundColor;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    .burguer{
+        svg{
+            color: $mainBlack;
         }
     }
 }

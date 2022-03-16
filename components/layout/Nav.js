@@ -16,7 +16,7 @@ const Nav = () => {
     // States 
     const [isActive, setIsActive] = useState(false);
     // const [headerClassName, setHeaderClassName] = useState("");
-    const [header, setHeader] = useState("asd");
+    const [header, setHeader] = useState(false);
 
     // Variables
     const menuClass = `${isActive ? `${styles.menu} ${styles.active}` : styles.menu}`;
@@ -33,10 +33,10 @@ const Nav = () => {
     const handleMenu = () => setIsActive(!isActive);
 
     const handleScroll = header => {
-        if (header !== 'scrolled' && window.pageYOffset > 0) {
-            setHeader('scrolled');
-        } else if (header === 'scrolled' && window.pageYOffset <= 0) {
-            setHeader('');
+        if (!header && window.pageYOffset > 0) {
+            setHeader(true);
+        } else if (header && window.pageYOffset <= 0) {
+            setHeader(false);
         }
     }
 
@@ -46,7 +46,7 @@ const Nav = () => {
 
     return (
 
-        <nav className={`container ${styles.main_nav} ${header}`} >
+        <nav className={`container ${styles.main_nav} ${header ? styles.scrolled : ''}`} >
             <div className={`row ${styles.main_nav__wrapper}`}>
 
                 <a href='#' className={styles.logo}>
