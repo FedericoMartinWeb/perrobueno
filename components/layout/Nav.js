@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Link as LinksScroll } from 'react-scroll'
+import { useRouter } from 'next/router'
+import { Link as LinksScroll, scroller } from 'react-scroll'
 
 // Styles
 import styles from '../../styles/Nav.module.scss'
@@ -13,10 +14,10 @@ import images from '../../constants/images'
 
 const Nav = () => {
 
-    // States 
+    // Hooks 
     const [isActive, setIsActive] = useState(false);
-    // const [headerClassName, setHeaderClassName] = useState("");
     const [header, setHeader] = useState(false);
+    const router = useRouter();
 
     // Variables
     const menuClass = `${isActive ? `${styles.menu} ${styles.active}` : styles.menu}`;
@@ -24,9 +25,8 @@ const Nav = () => {
         'activeClass': `${styles.active}`,
         'spy': true,
         'smooth': true,
-        'offset': - 50,
-        'duration': 600,
-        'smooth': 'easeOutQuart'
+        'duration': 0,
+        'smooth': 'linear'
     }
 
     // Handle Functions
@@ -60,12 +60,14 @@ const Nav = () => {
 
                     <ul>
                         <li>
-                            <LinksScroll {...reactScrollVars} to='services' onClick={handleMenu} >Servicios</LinksScroll>
+                            {router.pathname === '/'
+                                ? <LinksScroll {...reactScrollVars} to='services' onClick={handleMenu} >Servicios</LinksScroll>
+                                : <Link scroll={false} href="http://localhost:3000#services">Services</Link>}
                         </li>
                         <li><a href='#'>Guarderia</a></li>
                         <li><a href='#'>Educacion</a></li>
                         <li><a href='#'>Peluqueria</a></li>
-                        <li><Link href='notnow'><a>Tarifas</a></Link></li>
+                        <li><Link href='tarifas'><a>Tarifas</a></Link></li>
                         <li>
                             <LinksScroll {...reactScrollVars} to='contact' onClick={handleMenu} >Contacto</LinksScroll>
                         </li>
