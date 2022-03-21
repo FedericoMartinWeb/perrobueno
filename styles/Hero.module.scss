@@ -52,12 +52,69 @@
         
         .hero__chevron{
             margin-top: 6rem;
+            animation: MoveUpDown 1s linear infinite;
             
             svg{
                 color: #C9C8C8;
                 font-size: 3.5rem;
             }
         }
+
     }
 
+    .hero__chevron__desktop{
+        display: none;
+    }
+    
+    @include atDesktop{
+
+        &:after{
+            height: 70%;
+        }
+
+        .content{
+            max-width: 73rem;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .hero__chevron{
+                display: none;
+            }
+        }
+
+        .hero__chevron__desktop{
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 10rem;
+            z-index: 2;
+            cursor: pointer;
+            
+            svg{
+                color: #C9C8C8;
+                font-size: 4.5rem;
+            }
+        }
+    }
+
+}
+
+// Animations
+@keyframes MoveUpDown {
+    0% {
+        bottom: 10rem;
+    }
+
+    25% {
+        bottom: 8rem;
+    }
+
+    50%{
+        bottom: 10rem;
+    }
+    
+    100% {
+        bottom: 11rem;
+    }
 }

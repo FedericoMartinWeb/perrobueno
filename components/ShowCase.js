@@ -9,7 +9,7 @@ import images from '../constants/images'
 const ShowCase = ({ showcase }) => {
     console.log(showcase);
     return (
-        <section className={`container ${styles.showcase}`}>
+        <section id={showcase.secId} className={`container ${styles.showcase}`}>
             <div className={`row ${styles.wrapper}`}>
 
                 <div className={styles.content}>

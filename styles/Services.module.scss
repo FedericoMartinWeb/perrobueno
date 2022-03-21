@@ -27,6 +27,11 @@
                     margin-bottom: 0;
                 }
             }
+
+            @include atDesktop{
+                max-width: 67rem;
+                margin: 0 auto;
+            }
         }
 
         .slide{
@@ -34,7 +39,7 @@
 
             .splide{
 
-               img{
+                img{
                     border-radius: 4.2rem;
                     width: 100%;
                     height: 100%;
@@ -71,7 +76,22 @@
                 }
             }
 
-            
+            @include atDesktop{
+                max-width: 120rem;
+                margin-left: auto;
+                margin-right: auto;
+
+                .splide{
+
+                    img{
+                        border-radius: 4.2rem 0 0 4.2rem;
+
+                        &:nth-child(even){
+                            border-radius: 0 4.2rem 4.2rem 0;
+                        }
+                    }
+                }
+            }            
         }
     }
 

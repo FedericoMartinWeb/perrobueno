@@ -20,13 +20,13 @@ const Nav = () => {
     const router = useRouter();
 
     // Variables
+    const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL;
     const menuClass = `${isActive ? `${styles.menu} ${styles.active}` : styles.menu}`;
     const reactScrollVars = {
         'activeClass': `${styles.active}`,
         'spy': true,
         'smooth': true,
-        'duration': 0,
-        'smooth': 'linear'
+        'duration': 100
     }
 
     // Handle Functions
@@ -49,9 +49,9 @@ const Nav = () => {
         <nav className={`container ${styles.main_nav} ${header ? styles.scrolled : ''}`} >
             <div className={`row ${styles.main_nav__wrapper}`}>
 
-                <a href='#' className={styles.logo}>
-                    <img src={images.pb_logo.src} alt="logo" />
-                </a>
+                <Link href={`${SITE_URL}#`}>
+                    <a className={styles.logo}><img src={images.pb_logo.src} alt="logo" /></a>
+                </Link>
 
                 <div className={menuClass}>
                     <button onClick={handleMenu} className={styles.close}>
@@ -61,15 +61,29 @@ const Nav = () => {
                     <ul>
                         <li>
                             {router.pathname === '/'
-                                ? <LinksScroll {...reactScrollVars} to='services' onClick={handleMenu} >Servicios</LinksScroll>
-                                : <Link scroll={false} href="http://localhost:3000#services">Services</Link>}
+                                ? <LinksScroll {...reactScrollVars} to='servicios' onClick={handleMenu} >Servicios</LinksScroll>
+                                : <Link scroll={false} href={`${SITE_URL}#servicios`} >Servicios</Link>}
                         </li>
-                        <li><a href='#'>Guarderia</a></li>
-                        <li><a href='#'>Educacion</a></li>
-                        <li><a href='#'>Peluqueria</a></li>
+                        <li>
+                            {router.pathname === '/'
+                                ? <LinksScroll {...reactScrollVars} to='guarderia' onClick={handleMenu} >Guardería</LinksScroll>
+                                : <Link scroll={false} href={`${SITE_URL}#guarderia`} >Guardería</Link>}
+                        </li>
+                        <li>
+                            {router.pathname === '/'
+                                ? <LinksScroll {...reactScrollVars} to='educacion' onClick={handleMenu} >Educación</LinksScroll>
+                                : <Link scroll={false} href={`${SITE_URL}#educacion`} >Educación</Link>}
+                        </li>
+                        <li>
+                            {router.pathname === '/'
+                                ? <LinksScroll {...reactScrollVars} to='peluqueria' onClick={handleMenu} >Peluquería</LinksScroll>
+                                : <Link scroll={false} href={`${SITE_URL}#peluqueria`} >Peluquería</Link>}
+                        </li>
                         <li><Link href='tarifas'><a>Tarifas</a></Link></li>
                         <li>
-                            <LinksScroll {...reactScrollVars} to='contact' onClick={handleMenu} >Contacto</LinksScroll>
+                            {router.pathname === '/'
+                                ? <LinksScroll {...reactScrollVars} to='contacto' onClick={handleMenu} >Contacto</LinksScroll>
+                                : <Link scroll={false} href={`${SITE_URL}#contacto`} >Contacto</Link>}
                         </li>
                     </ul>
                 </div>
@@ -79,7 +93,7 @@ const Nav = () => {
                 </button>
 
             </div>
-        </nav>
+        </nav >
 
     )
 }

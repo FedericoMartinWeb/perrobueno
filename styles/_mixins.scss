@@ -11,13 +11,13 @@
 }
 
 @mixin atDesktop {
-    @media only screen and (min-width: 1200px){
+    @media only screen and (min-width: 1024px){
         @content;
     }
 }
 
 @mixin atDesktopLarge {
-    @media only screen and (min-width: 1440px){
+    @media only screen and (min-width: 1200px){
         @content;
     }
 }

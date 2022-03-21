@@ -25,7 +25,9 @@ const Services = ({ services }) => {
         fixedHeight: '33.1rem',
         breakpoints: {
             1024: {
-                perPage: 2
+                perPage: 2,
+                perMove: 2,
+                fixedHeight: '49rem',
             }
         }
     };
@@ -42,7 +44,7 @@ const Services = ({ services }) => {
     );
 
     return (
-        <section id='services' className={`container ${styles.services}`}>
+        <section id='servicios' className={`container ${styles.services}`}>
             <div className={`row ${styles.wrapper}`}>
 
                 <article className={styles.content}>

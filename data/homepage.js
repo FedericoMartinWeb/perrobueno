@@ -39,6 +39,7 @@ export const homepage = {
             "showcase": [
                 {
                     "id": 1,
+                    "secId": 'guarderia',
                     "title": "Guardería",
                     "description": "Un miembro de nuestro equipo estará en todo momento con ellos para guiar los juegos, vigilar que todo vaya bien y que ningún perro sea excluido. \n\nNos encargamos de controlar el estado vacunal de todos los perros que acudan a nuestro centro para asegurarnos de que todos están sanos y seguros. Hacemos traslado puerta a puerta cada mañana con una ruta fija desde primera hora ya estamos en ruta canina para que pasen la mayor cantidad de tiempo haciendo ejercicio.",
                     "image": "educacion2",
@@ -46,6 +47,7 @@ export const homepage = {
                 },
                 {
                     "id": 2,
+                    "secId": 'educacion',
                     "title": "Educación",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.",
                     "image": "perro_5",
@@ -53,6 +55,7 @@ export const homepage = {
                 },
                 {
                     "id": 3,
+                    "secId": 'peluqueria',
                     "title": "Peluquería",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.",
                     "image": "educacion3",

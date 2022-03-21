@@ -2,6 +2,7 @@ import React from 'react'
 
 // Components
 import { HalfCircle } from '../'
+import { Link as LinksScroll } from 'react-scroll'
 
 // Styles
 import styles from '../../styles/Hero.module.scss'
@@ -27,8 +28,12 @@ const Hero = () => {
                 </button>
             </div>
 
+            <LinksScroll to='servicios' className={styles.hero__chevron__desktop}>
+                <FaChevronDown />
+            </LinksScroll>
+
             <HalfCircle color='rgba(255,252,244,1)' />
-        </header>
+        </header >
     )
 }
 

@@ -23,12 +23,13 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(red, .8);
+        background-color: rgba($regWhite, .98);
         padding: 2.7rem 3.7rem;
+        padding-right: 0;
         transform: translateX(100%);
         transition: transform .3s ease-in-out;
         z-index: 11;
-        padding-top: 3rem;
+        padding-top: 10rem;
 
         &.active{
             transform: translateX(0);
@@ -36,23 +37,87 @@
 
         .close{
             position: absolute;
-            top: 3rem;
+            top: 1.6rem;
             right: 3.7rem;
 
             svg{
-                color: #fff;
+                color: $mainBlack;
                 font-size: 3rem;
+            }
+
+            @include atDesktop{
+                display: none;
             }
         }
 
         ul{
-            background-color: green;
             
             li{
-                margin-bottom: 2rem;
+                text-align: left;
+                padding: 2rem 0;
+                border-bottom: 2px solid $mainRed;
 
-                a.active{
-                    background-color: pink;
+                a{
+                    font-size: 2rem;
+                    display: block;
+                    color: #565656;
+                    text-decoration: none;
+
+                    &.active{
+                        color: $mainRed;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        @include atDesktop{
+            position: static;
+            transform: translate(0);
+            width: auto;
+            height: auto;
+            padding: 0;
+            background-color: initial;
+
+            ul{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                li{
+                    padding: 0;
+                    margin-right: 3rem;
+                    border-bottom: none;
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+
+                    a{
+                        cursor: pointer;
+                        position: relative;
+                        padding-bottom: .5rem;
+                        color: $regWhite;
+
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 2px;
+                            background-color: transparent;
+                        }
+
+                        &.active{
+                            font-weight: normal;
+                            color: inherit;
+
+                            &:after{
+                                background-color: $mainRed;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -74,6 +139,10 @@
             color: $regWhite;
             font-size: 3rem;
         }
+
+        @include atDesktop{
+            display: none;
+        }
     }
 }
 
@@ -86,6 +155,17 @@
     .burguer{
         svg{
             color: $mainBlack;
+        }
+    }
+
+    @include atDesktop{
+        padding-top: 1.3rem;
+        padding-bottom: 1.3rem;
+
+        .menu{
+            ul li a{
+                color: $mainBlack ;
+            }
         }
     }
 }
