@@ -24,10 +24,13 @@ const Services = ({ services }) => {
         perMove: 1,
         fixedHeight: '33.1rem',
         breakpoints: {
+            768: {
+                fixedHeight: '49rem'
+            },
             1024: {
-                perPage: 2,
-                perMove: 2,
                 fixedHeight: '49rem',
+                perPage: 2,
+                perMove: 2
             }
         }
     };
@@ -37,7 +40,7 @@ const Services = ({ services }) => {
             <button className={`${styles.splide__arrow} splide__arrow--prev`} type="button" aria-controls="splide01-track" aria-label="Previous slide" disabled="">
                 <FaChevronLeft />
             </button>
-            <button className={`${styles.splide__arrow} splide__arrow--next`} type="button" aria-controls="splide01-track" aria-label="Next slide">
+            <button className={`${styles.splide__arrow} ${styles.splide__arrow__dnext} splide__arrow--next`} type="button" aria-controls="splide01-track" aria-label="Next slide">
                 <FaChevronRight />
             </button>
         </div>

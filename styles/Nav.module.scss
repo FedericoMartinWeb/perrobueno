@@ -44,10 +44,6 @@
                 color: $mainBlack;
                 font-size: 3rem;
             }
-
-            @include atDesktop{
-                display: none;
-            }
         }
 
         ul{
@@ -71,13 +67,17 @@
             }
         }
 
-        @include atDesktop{
+        @include atMediumLarge{
             position: static;
             transform: translate(0);
             width: auto;
             height: auto;
             padding: 0;
             background-color: initial;
+
+            .close{
+                display: none;
+            }
 
             ul{
                 display: flex;
@@ -86,7 +86,7 @@
 
                 li{
                     padding: 0;
-                    margin-right: 3rem;
+                    margin-right: 3.5rem;
                     border-bottom: none;
 
                     &:last-child{
@@ -94,6 +94,7 @@
                     }
 
                     a{
+                        font-size: 1.8rem;
                         cursor: pointer;
                         position: relative;
                         padding-bottom: .5rem;
@@ -140,7 +141,7 @@
             font-size: 3rem;
         }
 
-        @include atDesktop{
+        @include atMediumLarge{
             display: none;
         }
     }
@@ -158,7 +159,7 @@
         }
     }
 
-    @include atDesktop{
+    @include atMediumLarge{
         padding-top: 1.3rem;
         padding-bottom: 1.3rem;
 

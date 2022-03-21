@@ -49,7 +49,7 @@ const Nav = () => {
         <nav className={`container ${styles.main_nav} ${header ? styles.scrolled : ''}`} >
             <div className={`row ${styles.main_nav__wrapper}`}>
 
-                <Link href={`${SITE_URL}#`}>
+                <Link href={`${SITE_URL}`}>
                     <a className={styles.logo}><img src={images.pb_logo.src} alt="logo" /></a>
                 </Link>
 

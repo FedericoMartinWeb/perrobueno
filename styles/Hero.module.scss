@@ -65,8 +65,16 @@
     .hero__chevron__desktop{
         display: none;
     }
+
+    @include atMedium{
+        .content{
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 55rem;
+        }
+    }
     
-    @include atDesktop{
+    @include atMediumLarge{
 
         &:after{
             height: 70%;
@@ -74,8 +82,7 @@
 
         .content{
             max-width: 73rem;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            
 
             .hero__chevron{
                 display: none;

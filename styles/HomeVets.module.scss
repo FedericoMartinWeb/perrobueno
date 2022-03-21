@@ -1,4 +1,5 @@
 @import './vars';
+@import './mixins';
 
 .homevets{
     position: relative;
@@ -27,12 +28,23 @@
 
         .video{
             margin-top: 8rem;
-            background-color: red;
             
             iframe{
                 vertical-align: middle;
                 width: 100%;
                 height: 20.9rem;
+            }
+        }
+    }
+
+    @include atMedium{
+        .wrapper{
+            .video{
+                padding: 0 2rem;
+
+                iframe{
+                    height: 40rem;
+                }
             }
         }
     }

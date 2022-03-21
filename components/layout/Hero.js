@@ -32,7 +32,7 @@ const Hero = () => {
                 <FaChevronDown />
             </LinksScroll>
 
-            <HalfCircle color='rgba(255,252,244,1)' />
+            <HalfCircle color='#fafafa' />
         </header >
     )
 }

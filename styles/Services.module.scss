@@ -28,7 +28,7 @@
                 }
             }
 
-            @include atDesktop{
+            @include atMediumLarge{
                 max-width: 67rem;
                 margin: 0 auto;
             }
@@ -75,11 +75,29 @@
                     }
                 }
             }
+        }
+    }
 
-            @include atDesktop{
+    @include atMedium{
+        .wrapper{
+
+            .slide{
+                padding: 0 2rem;
+            }
+
+        }
+    }
+
+    @include atMediumLarge{
+        padding-top: 9.7rem;
+
+        .wrapper{
+
+            .slide{
                 max-width: 120rem;
                 margin-left: auto;
                 margin-right: auto;
+                padding: 0;
 
                 .splide{
 
@@ -90,10 +108,34 @@
                             border-radius: 0 4.2rem 4.2rem 0;
                         }
                     }
+
+                    .splide__arrow{
+                        svg{
+                            path{
+                                fill: $mainBlack;
+                            }
+                        }
+                    }
                 }
-            }            
+            }
+
         }
     }
-
     
+    @include atDesktop{
+        .wrapper{
+
+            .slide{
+                .splide__arrow{
+                    left: -7rem;
+
+                    &.splide__arrow__dnext{
+                        left: auto;
+                        right: -7rem;
+                    }
+                }
+            }
+
+        }
+    }
 }
