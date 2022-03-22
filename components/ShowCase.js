@@ -7,9 +7,10 @@ import styles from '../styles/ShowCase.module.scss'
 import images from '../constants/images'
 
 const ShowCase = ({ showcase }) => {
-    console.log(showcase);
+    const secClassName = showcase.id % 2 === 0 ? `${styles.showcase} ${styles.reverse}` : `${styles.showcase}`
+
     return (
-        <section id={showcase.secId} className={`container ${styles.showcase}`}>
+        <section id={showcase.secId} className={`container ${secClassName}`}>
             <div className={`row ${styles.wrapper}`}>
 
                 <div className={styles.content}>

@@ -17,6 +17,10 @@ const Reviews = ({ reviews }) => {
     console.log(reviews);
 
     const splideOptionsReviews = {
+        type: 'loop',
+        autoplay: true,
+        interval: 2000,
+        pauseOnHover: true,
         arrows: false,
         pagination: true,
         mediaQuery: 'min',
@@ -26,8 +30,25 @@ const Reviews = ({ reviews }) => {
         height: '45rem',
         gap: '13px',
         breakpoints: {
-            1024: {
+            768: {
                 perPage: 2
+            },
+            1024: {
+                height: '40rem',
+                padding: { right: '20%', left: '8px' },
+                gap: '17px',
+                perPage: 2
+            },
+            1440: {
+                height: '42rem',
+                padding: { right: '10%', left: '8px' },
+                gap: '20px',
+                perPage: 3
+            },
+            1920: {
+                padding: { right: '8%', left: '8px' },
+                gap: '23px',
+                perPage: 4
             }
         }
     };
@@ -37,7 +58,7 @@ const Reviews = ({ reviews }) => {
             <div className={`row ${styles.wrapper}`}>
 
                 <article className={styles.content}>
-                    <figure>
+                    <figure className={styles.google__img}>
                         <img src={images.google.src} alt="google" />
                     </figure>
 

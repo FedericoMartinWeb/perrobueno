@@ -56,7 +56,7 @@ p{
     }
 
     p{
-        font-size: 2.1rem;
+        font-size: 2rem;
         line-height: 3.2rem;
     }
 }
@@ -104,7 +104,14 @@ p{
         height: 7.2rem;
 
         &.down{
-            bottom: -6rem;
+            bottom: -7.2rem;
+        }
+
+        &.top{
+
+            &.up{
+                top: -7.2rem;
+            }
         }
     }
 }
@@ -130,6 +137,10 @@ p{
 }
 
 @include atMediumLarge{
+    .splide__pagination__page{
+        display: none !important;
+    }
+    
     #servicios .splide__list li:nth-child(even) img{
         border-radius: 0 4.2rem 4.2rem 0;
     }

@@ -48,4 +48,53 @@
             }
         }
     }
+
+    @include atMediumLarge{
+        padding-top: 20rem;
+        margin-bottom: 7.2rem;
+
+        .wrapper{
+
+            figure{
+                margin-bottom: 7.5rem;
+            }
+
+            p{
+                padding: 0;
+                max-width: 60rem;
+                margin: 0 auto;
+            }
+
+            .video{
+                padding: 0;
+                max-width: 80rem;
+                margin: 0 auto;
+                margin-top: 11rem;
+
+                iframe{
+                    height: 45rem;
+                }
+            }
+        }
+    }
+
+    @include atDesktop{
+
+        .wrapper{
+
+            figure{
+                img{
+                    width: 35.7rem;
+                }
+            }
+
+            .video{
+                max-width: 100rem;
+
+                iframe{
+                    height: 55rem;
+                }
+            }
+        }
+    }
 }

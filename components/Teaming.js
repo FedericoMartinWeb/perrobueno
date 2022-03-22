@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 // Styles
 import styles from '../styles/Teaming.module.scss'
@@ -7,13 +8,15 @@ import styles from '../styles/Teaming.module.scss'
 import images from '../constants/images'
 
 const Teaming = ({ teaming }) => {
-    console.log(teaming);
+
     return (
         <section className={`container ${styles.teaming}`}>
             <div className={`row ${styles.wrapper}`}>
 
                 <figure className={styles.logo}>
-                    <img src={images[teaming.logoName].src} alt="teaming" />
+                    <a target='_blank' href="https://www.teaming.net/esterilizacionaperrosppprescatados">
+                        <img src={images[teaming.logoName].src} alt="teaming" />
+                    </a>
                 </figure>
 
                 <h2>{teaming.title}</h2>
