@@ -23,6 +23,11 @@
             color: $mainBlack;
             font-weight: 600;
             margin-bottom: 4rem;
+
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
         }
     }
 

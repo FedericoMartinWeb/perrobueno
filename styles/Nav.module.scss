@@ -133,6 +133,10 @@
             object-fit: container;
             object-position: center center;
         }
+
+        @include atDesktop{
+            cursor: pointer;
+        }
     }
 
     .burguer{

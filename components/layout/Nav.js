@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Link as LinksScroll, scroller } from 'react-scroll'
+import { Link as LinksScroll } from 'react-scroll'
 
 // Styles
 import styles from '../../styles/Nav.module.scss'
@@ -26,7 +26,7 @@ const Nav = () => {
         'activeClass': `${styles.active}`,
         'spy': true,
         'smooth': true,
-        'duration': 100
+        'duration': 500
     }
 
     // Handle Functions
@@ -40,6 +40,15 @@ const Nav = () => {
         }
     }
 
+    // Functions
+    const renderMenuNav = (sectionID, name) => {
+        if (router.pathname === '/') {
+            return <LinksScroll {...reactScrollVars} to={sectionID} onClick={handleMenu} >{name}</LinksScroll>
+        } else {
+            return <Link scroll={false} href={`${SITE_URL}#${sectionID}`} >{name}</Link>
+        }
+    }
+
     useEffect(() => {
         window.onscroll = () => handleScroll(header);
     }, [header]);
@@ -49,9 +58,9 @@ const Nav = () => {
         <nav className={`container ${styles.main_nav} ${header ? styles.scrolled : ''}`} >
             <div className={`row ${styles.main_nav__wrapper}`}>
 
-                <Link href={`${SITE_URL}`}>
-                    <a className={styles.logo}><img src={images.pb_logo.src} alt="logo" /></a>
-                </Link>
+                <LinksScroll className={styles.logo} {...reactScrollVars} to='hero'>
+                    <img src={images.pb_logo.src} alt="logo" />
+                </LinksScroll>
 
                 <div className={menuClass}>
                     <button onClick={handleMenu} className={styles.close}>
@@ -59,32 +68,12 @@ const Nav = () => {
                     </button>
 
                     <ul>
-                        <li>
-                            {router.pathname === '/'
-                                ? <LinksScroll {...reactScrollVars} to='servicios' onClick={handleMenu} >Servicios</LinksScroll>
-                                : <Link scroll={false} href={`${SITE_URL}#servicios`} >Servicios</Link>}
-                        </li>
-                        <li>
-                            {router.pathname === '/'
-                                ? <LinksScroll {...reactScrollVars} to='guarderia' onClick={handleMenu} >Guardería</LinksScroll>
-                                : <Link scroll={false} href={`${SITE_URL}#guarderia`} >Guardería</Link>}
-                        </li>
-                        <li>
-                            {router.pathname === '/'
-                                ? <LinksScroll {...reactScrollVars} to='educacion' onClick={handleMenu} >Educación</LinksScroll>
-                                : <Link scroll={false} href={`${SITE_URL}#educacion`} >Educación</Link>}
-                        </li>
-                        <li>
-                            {router.pathname === '/'
-                                ? <LinksScroll {...reactScrollVars} to='peluqueria' onClick={handleMenu} >Peluquería</LinksScroll>
-                                : <Link scroll={false} href={`${SITE_URL}#peluqueria`} >Peluquería</Link>}
-                        </li>
-                        <li><Link href='tarifas'><a>Tarifas</a></Link></li>
-                        <li>
-                            {router.pathname === '/'
-                                ? <LinksScroll {...reactScrollVars} to='contacto' onClick={handleMenu} >Contacto</LinksScroll>
-                                : <Link scroll={false} href={`${SITE_URL}#contacto`} >Contacto</Link>}
-                        </li>
+                        <li> {renderMenuNav('servicios', 'Servicios')} </li>
+                        <li> {renderMenuNav('guarderia', 'Guardería')} </li>
+                        <li> {renderMenuNav('educacion', 'Educación')} </li>
+                        <li> {renderMenuNav('peluqueria', 'Peluquería')} </li>
+                        <li> <Link href='tarifas'><a>Tarifas</a></Link> </li>
+                        <li> {renderMenuNav('contacto', 'Contacto')} </li>
                     </ul>
                 </div>
 

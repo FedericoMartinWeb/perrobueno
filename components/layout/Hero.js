@@ -15,7 +15,7 @@ import images from '../../constants/images'
 
 const Hero = () => {
     return (
-        <header className={styles.hero}>
+        <header id='hero' className={styles.hero}>
             <figure className={styles.hero__img}>
                 <img src={images.perrobuenofoto.src} alt="hero" />
             </figure>
@@ -28,7 +28,7 @@ const Hero = () => {
                 </button>
             </div>
 
-            <LinksScroll to='servicios' className={styles.hero__chevron__desktop}>
+            <LinksScroll smooth={true} duration={500} to='servicios' className={styles.hero__chevron__desktop}>
                 <FaChevronDown />
             </LinksScroll>
 

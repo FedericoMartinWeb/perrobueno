@@ -23,7 +23,7 @@ const HomeVets = ({ homevets }) => {
                 <p>{homevets.description}</p>
 
                 <div className={styles.video}>
-                    <iframe src={homevets.videoUrl} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+                    {/* <iframe src={homevets.videoUrl} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe> */}
                 </div>
             </div>
 
