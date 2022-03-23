@@ -2,6 +2,12 @@ export const homepage = {
     "data": {
         "id": 1,
         "attributes": {
+            "hero": {
+                "id": 1,
+                "title": "Bienvenido a PERROBUENO Madrid",
+                "subtitle": "¡Tu perro al cole!",
+                "image": "perrobuenofoto"
+            },
             "services": {
                 "id": 1,
                 "title": "Servicios",

@@ -13,16 +13,17 @@ import { FaChevronDown } from "react-icons/fa";
 // Images
 import images from '../../constants/images'
 
-const Hero = () => {
+const Hero = ({ hero }) => {
+
     return (
         <header id='hero' className={styles.hero}>
             <figure className={styles.hero__img}>
-                <img src={images.perrobuenofoto.src} alt="hero" />
+                <img src={images[hero.image].src} alt="hero" />
             </figure>
 
             <div className={styles.content}>
-                <h1>Bienvenido a PERROBUENO Madrid</h1>
-                <h3>¡Tu perro al cole!</h3>
+                <h1>{hero.title}</h1>
+                {hero.subtitle && <h3>{hero.subtitle}</h3>}
                 <button className={styles.hero__chevron}>
                     <FaChevronDown />
                 </button>

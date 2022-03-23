@@ -12,6 +12,10 @@ body{
     background-color: $backgroundColor;
 }
 
+body #__next{
+    overflow: hidden;
+}
+
 h1, h2, h3, h4, p{
     color: $regWhite;
     font-weight: 400;

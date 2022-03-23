@@ -1,0 +1,21 @@
+@import './vars';
+@import './mixins';
+
+.tarifas{
+    padding-top: 7.7rem;
+
+    .wrapper{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @include atMedium{
+
+        .wrapper{
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+        }
+    }
+}

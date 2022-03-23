@@ -3,11 +3,11 @@ import React from 'react'
 // Components
 import { Nav, Footer, Hero } from '../';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, hero }) => {
     return (
         <>
             <Nav />
-            <Hero />
+            <Hero hero={hero} />
             <main>
                 {children}
             </main>

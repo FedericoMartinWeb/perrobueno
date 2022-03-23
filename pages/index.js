@@ -17,7 +17,7 @@ export async function getStaticProps() {
 export default function Home({ homepage }) {
 
     return (
-        <Layout>
+        <Layout hero={homepage.hero}>
             <Services services={homepage.services} />
             <HomeVets homevets={homepage.homevets} />
             {homepage.showcase.map(item => (

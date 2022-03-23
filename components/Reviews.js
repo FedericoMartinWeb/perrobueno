@@ -14,7 +14,6 @@ import styles from '../styles/Reviews.module.scss';
 import images from '../constants/images';
 
 const Reviews = ({ reviews }) => {
-    console.log(reviews);
 
     const splideOptionsReviews = {
         type: 'loop',

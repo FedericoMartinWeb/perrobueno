@@ -72,7 +72,7 @@ const Nav = () => {
                         <li> {renderMenuNav('guarderia', 'Guardería')} </li>
                         <li> {renderMenuNav('educacion', 'Educación')} </li>
                         <li> {renderMenuNav('peluqueria', 'Peluquería')} </li>
-                        <li> <Link href='tarifas'><a>Tarifas</a></Link> </li>
+                        <li> <Link href='/tarifas'><a>Tarifas</a></Link> </li>
                         <li> {renderMenuNav('contacto', 'Contacto')} </li>
                     </ul>
                 </div>

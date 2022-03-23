@@ -11,6 +11,7 @@ import Reviews from "./Reviews";
 import ReviewCard from "./ReviewCard";
 import Teaming from "./Teaming";
 import Contact from "./Contact";
+import TarifasCard from "./TarifasCard";
 
 export {
     Layout,
@@ -25,5 +26,6 @@ export {
     Reviews,
     ReviewCard,
     Teaming,
-    Contact
+    Contact,
+    TarifasCard
 }
