@@ -75,7 +75,21 @@
             }
             
         }
+
         
+    }
+    
+    &:nth-child(1),
+    &:nth-child(2){
+        .content{
+            .card__main{
+                p{
+                    max-width: 16rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
     }
 
     @include atMedium{
@@ -83,6 +97,7 @@
         border-left: 1px solid rgba(112, 112, 112, 0.16);
         border-bottom: 1px solid rgba(112, 112, 112, 0.16);
         box-shadow: 0px 3px 6px rgba(102, 102, 102, 0.21);
+        margin-bottom: 0;
 
         .header{
 
@@ -97,6 +112,109 @@
         .content{
             padding: 1rem;
             padding-bottom: 3rem;
+
+            .card__main{
+                
+
+                span{
+                    min-height: 6rem;
+                }
+            }
+        }
+    }
+
+    @include atMediumLarge{
+            display: flex;
+            flex-direction: column;
+
+        .header{
+            h2{
+                max-width: none;
+                min-height: 10.6rem;
+                padding: 0 2rem;
+            }
+
+            .card__circle{
+                height: 4.4rem;
+            }
+        }
+
+        .content{
+            padding: 1rem;
+            padding-bottom: 2.9rem;
+            padding-top: 0;
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+
+            .card__main{
+                flex: 1;
+
+                &:nth-child(2){
+                    margin-top: 0;
+                    padding-top: 0;
+                    border-top: none;
+                    width: 50%;
+
+                    &:before{
+                        top: auto;
+                        left: 0;
+                        bottom: -4rem;
+                        transform: translateX(0);
+                        height: 100%;
+                        width: 1px;
+                        background-color: $mainBlack;
+                    }
+                }
+
+                p{
+                    min-height: 6.4rem;
+                }
+
+                span{
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    @include atDesktopExtraLarge{
+        .header{
+            padding-top: 8rem;
+            padding-bottom: 10rem;
+        }
+
+        .content{
+            padding: 2rem;
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+
+            .card__main{
+                &:nth-child(2){
+                    &:before{
+                        bottom: -5rem;
+                        height: 16rem;
+                    }
+                }
+
+                p{
+                    font-size: 2.2rem;
+                }
+            }
+        }
+
+        &:nth-child(1),
+        &:nth-child(2){
+            .content{
+                .card__main{
+                    p{
+                        max-width: 18rem;
+                    }
+                }
+            }
         }
     }
 }

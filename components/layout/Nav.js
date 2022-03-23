@@ -26,7 +26,8 @@ const Nav = () => {
         'activeClass': `${styles.active}`,
         'spy': true,
         'smooth': true,
-        'duration': 500
+        'duration': 500,
+        'offset': 20
     }
 
     // Handle Functions

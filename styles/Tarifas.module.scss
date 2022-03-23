@@ -12,10 +12,24 @@
     @include atMedium{
 
         .wrapper{
+            max-width: 110rem;
             padding: 0 2rem;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 2rem;
+            grid-gap: 8rem 2rem;
+        }
+    }
+
+    @include atMediumLarge{
+        .wrapper{
+            grid-gap: 10rem 4rem;
+        }
+    }
+
+    @include atDesktopExtraLarge{
+        .wrapper{
+            grid-gap: 13.5rem 5.3rem;
+            max-width: 140rem;
         }
     }
 }

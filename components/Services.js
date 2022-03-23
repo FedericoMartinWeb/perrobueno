@@ -29,8 +29,7 @@ const Services = ({ services }) => {
             },
             1024: {
                 fixedHeight: '49rem',
-                perPage: 2,
-                perMove: 2
+                perPage: 2
             }
         }
     };
