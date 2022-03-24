@@ -18,9 +18,9 @@ const Footer = () => {
                         <a href='tel:627 74 19 47'>627 74 19 47</a>
                     </div>
                     <address>
-                        <a href='https://www.instagram.com/perrobueno.es/' target='_blank'><AiOutlineInstagram /></a>
-                        <a href='https://www.twitter.com/perrobueno_es/' target='_blank'><AiOutlineTwitter /></a>
-                        <a href='https://www.facebook.com/perrobueno.es/' target='_blank'><AiOutlineFacebook /></a>
+                        <a rel="noreferrer" href='https://www.instagram.com/perrobueno.es/' target='_blank'><AiOutlineInstagram /></a>
+                        <a rel="noreferrer" href='https://www.twitter.com/perrobueno_es/' target='_blank'><AiOutlineTwitter /></a>
+                        <a rel="noreferrer" href='https://www.facebook.com/perrobueno.es/' target='_blank'><AiOutlineFacebook /></a>
                     </address>
                     <p>Copyright © 2022 </p>
                     <p>All rights reserved.</p>

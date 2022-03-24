@@ -14,12 +14,12 @@ const Teaming = ({ teaming }) => {
             <div className={`row ${styles.wrapper}`}>
 
                 <figure className={styles.logo}>
-                    <a target='_blank' href='https://www.teaming.net/esterilizacionaperrosppprescatados'>
+                    <a rel="noreferrer" target='_blank' href='https://www.teaming.net/esterilizacionaperrosppprescatados'>
                         <img src={images[teaming.logoName].src} alt='teaming' />
                     </a>
                 </figure>
 
-                <h2><a target='_blank' href='https://www.teaming.net/esterilizacionaperrosppprescatados'>{teaming.title}</a></h2>
+                <h2><a rel="noreferrer" target='_blank' href='https://www.teaming.net/esterilizacionaperrosppprescatados'>{teaming.title}</a></h2>
 
                 <p>{teaming.description}</p>
 
