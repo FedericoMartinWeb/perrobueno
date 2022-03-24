@@ -3,6 +3,7 @@
 
 .tarifas{
     padding-top: 7.7rem;
+    padding-bottom: 6.2rem;
 
     .wrapper{
         padding-left: 0;
@@ -21,6 +22,9 @@
     }
 
     @include atMediumLarge{
+        padding-bottom: 14.6rem;
+        padding-top: 10rem;
+
         .wrapper{
             grid-gap: 10rem 4rem;
         }

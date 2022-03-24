@@ -74,4 +74,28 @@
 
     }
 
+    @include atMediumLarge{
+        padding-top: 16rem;
+
+        .wrapper{
+            .content{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 0 7rem;
+
+                .form{
+                    input[type=submit]{
+                        margin-left: 0;
+                        cursor: pointer;
+                    }
+                }
+
+                .description{
+                    margin-top: 0;
+                    padding-right: 25%;
+                }
+            }
+        }
+    }
+
 }

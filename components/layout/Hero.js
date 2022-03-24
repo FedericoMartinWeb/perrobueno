@@ -1,4 +1,5 @@
 import React from 'react'
+import { useRouter } from 'next/router'
 
 // Components
 import { HalfCircle } from '../'
@@ -15,6 +16,12 @@ import images from '../../constants/images'
 
 const Hero = ({ hero }) => {
 
+    // Hooks
+    const router = useRouter();
+
+    // Variables
+    const chevronDirection = router.pathname === '/' ? 'servicios' : 'tarifas';
+
     return (
         <header id='hero' className={styles.hero}>
             <figure className={styles.hero__img}>
@@ -29,7 +36,7 @@ const Hero = ({ hero }) => {
                 </button>
             </div>
 
-            <LinksScroll smooth={true} duration={500} to='servicios' className={styles.hero__chevron__desktop}>
+            <LinksScroll smooth={true} duration={500} to={chevronDirection} className={styles.hero__chevron__desktop}>
                 <FaChevronDown />
             </LinksScroll>
 

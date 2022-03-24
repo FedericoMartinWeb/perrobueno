@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/dist/shared/lib/head'
 
 // Data
 import { tarifas } from '../../data/tarifas'
@@ -20,14 +21,19 @@ export async function getStaticProps() {
 export default function Tarifas({ tarifas }) {
 
     return (
-        <Layout hero={tarifas.hero}>
-            <section id='tarifas' className={`container ${styles.tarifas}`}>
-                <div className={`row ${styles.wrapper}`}>
-                    {tarifas.tarifaItem.map(item => (
-                        <TarifasCard key={item.id} tarifa={item} />
-                    ))}
-                </div>
-            </section>
-        </Layout>
+        <>
+            <Head>
+                <title>Tarifas | PerroBueno</title>
+            </Head>
+            <Layout hero={tarifas.hero}>
+                <section id='tarifas' className={`container ${styles.tarifas}`}>
+                    <div className={`row ${styles.wrapper}`}>
+                        {tarifas.tarifaItem.map(item => (
+                            <TarifasCard key={item.id} tarifa={item} />
+                        ))}
+                    </div>
+                </section>
+            </Layout>
+        </>
     )
 }

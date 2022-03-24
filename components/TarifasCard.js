@@ -4,7 +4,6 @@ import React from 'react'
 import styles from '../styles/TarifaCard.module.scss'
 
 const TarifasCard = ({ tarifa }) => {
-    console.log(tarifa);
 
     return (
         <article className={styles.card}>

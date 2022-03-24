@@ -22,12 +22,12 @@ const Nav = () => {
     // Variables
     const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL;
     const menuClass = `${isActive ? `${styles.menu} ${styles.active}` : styles.menu}`;
+    const isHome = router.pathname === '/';
     const reactScrollVars = {
         'activeClass': `${styles.active}`,
         'spy': true,
         'smooth': true,
-        'duration': 500,
-        'offset': 20
+        'duration': 500
     }
 
     // Handle Functions
@@ -43,7 +43,7 @@ const Nav = () => {
 
     // Functions
     const renderMenuNav = (sectionID, name) => {
-        if (router.pathname === '/') {
+        if (isHome) {
             return <LinksScroll {...reactScrollVars} to={sectionID} onClick={handleMenu} >{name}</LinksScroll>
         } else {
             return <Link scroll={false} href={`${SITE_URL}#${sectionID}`} >{name}</Link>
@@ -59,9 +59,10 @@ const Nav = () => {
         <nav className={`container ${styles.main_nav} ${header ? styles.scrolled : ''}`} >
             <div className={`row ${styles.main_nav__wrapper}`}>
 
-                <LinksScroll className={styles.logo} {...reactScrollVars} to='hero'>
-                    <img src={images.pb_logo.src} alt="logo" />
-                </LinksScroll>
+                {isHome
+                    ? <LinksScroll className={styles.logo} {...reactScrollVars} to='hero'><img src={images.pb_logo.src} alt="logo" /></LinksScroll>
+                    : <Link href={SITE_URL}><a className={styles.logo}><img src={images.pb_logo.src} alt="logo" /></a></Link>
+                }
 
                 <div className={menuClass}>
                     <button onClick={handleMenu} className={styles.close}>
@@ -73,7 +74,7 @@ const Nav = () => {
                         <li> {renderMenuNav('guarderia', 'Guardería')} </li>
                         <li> {renderMenuNav('educacion', 'Educación')} </li>
                         <li> {renderMenuNav('peluqueria', 'Peluquería')} </li>
-                        <li> <Link href='/tarifas'><a>Tarifas</a></Link> </li>
+                        <li> <Link href='/tarifas'><a className={isHome ? '' : `${styles.active}`}>Tarifas</a></Link> </li>
                         <li> {renderMenuNav('contacto', 'Contacto')} </li>
                     </ul>
                 </div>

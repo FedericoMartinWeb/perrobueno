@@ -112,7 +112,7 @@
 
                         &.active{
                             font-weight: normal;
-                            color: inherit;
+                            color: $regWhite;
 
                             &:after{
                                 background-color: $mainRed;
@@ -169,7 +169,7 @@
 
         .menu{
             ul li a{
-                color: $mainBlack ;
+                color: $mainBlack !important;
             }
         }
     }
