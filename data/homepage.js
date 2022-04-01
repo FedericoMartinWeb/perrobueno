@@ -17,12 +17,12 @@ export const homepage = {
                     {
                         "id": 1,
                         "alt": "perrobueno1",
-                        "image": 'perro_3'
+                        "image": 'tarifas'
                     },
                     {
                         "id": 2,
                         "alt": "perrobueno2",
-                        "image": 'perro_5'
+                        "image": 'perro_8'
                     },
                     {
                         "id": 3,
@@ -32,7 +32,7 @@ export const homepage = {
                     {
                         "id": 4,
                         "alt": "perrobueno4",
-                        "image": 'educacion3'
+                        "image": 'perro_9'
                     }
                 ]
             },
@@ -48,7 +48,7 @@ export const homepage = {
                     "secId": 'guarderia',
                     "title": "Guardería",
                     "description": "Un miembro de nuestro equipo estará en todo momento con ellos para guiar los juegos, vigilar que todo vaya bien y que ningún perro sea excluido. \n\nNos encargamos de controlar el estado vacunal de todos los perros que acudan a nuestro centro para asegurarnos de que todos están sanos y seguros. Hacemos traslado puerta a puerta cada mañana con una ruta fija desde primera hora ya estamos en ruta canina para que pasen la mayor cantidad de tiempo haciendo ejercicio.",
-                    "image": "educacion2",
+                    "image": "guarderia",
                     "altImage": "dogshowcase1"
                 },
                 {

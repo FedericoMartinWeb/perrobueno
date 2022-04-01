@@ -5,7 +5,7 @@ export const tarifas = {
             "hero": {
                 "id": 1,
                 "title": "Tarifas",
-                "image": "educacion2"
+                "image": "hero"
             },
             "tarifaItem": [
                 {

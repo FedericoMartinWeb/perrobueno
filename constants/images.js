@@ -1,13 +1,18 @@
-import educacion3 from '../assets/images/educacion3.webp'
+import educacion3 from '../assets/images/educacion3.jpg'
 import guarderiatop from '../assets/images/guarderiatop.webp'
 import happyface from '../assets/images/happyface.png'
 import happyfaceblack from '../assets/images/happyfaceblack.png'
 import logoblanco from '../assets/images/logoblanco.png'
 import logorojo from '../assets/images/logorojo.png'
 import pb_logo from '../assets/images/pb_logo.png'
-import perro_3 from '../assets/images/perro_3.webp'
-import perro_5 from '../assets/images/perro_5.webp'
+import perro_3 from '../assets/images/perro_3.jpg'
+import perro_5 from '../assets/images/perro_5.jpg'
+import perro_8 from '../assets/images/perro_8.jpg'
+import perro_9 from '../assets/images/perro_9.jpg'
+import guarderia from '../assets/images/guarderia.jpg'
 import perro_6 from '../assets/images/perro_6.webp'
+import tarifas from '../assets/images/herotarifas.jpg'
+import hero from '../assets/images/hero.jpg'
 import perro_prueba from '../assets/images/perro_prueba.webp'
 import perrobuenofoto from '../assets/images/perrobuenofoto.webp'
 import prueba from '../assets/images/prueba.webp'
@@ -26,6 +31,11 @@ import review6 from '../assets/images/reviews/review6.png'
 
 export default {
     educacion3,
+    guarderia,
+    perro_8,
+    perro_9,
+    tarifas,
+    hero,
     guarderiatop,
     happyface,
     happyfaceblack,
