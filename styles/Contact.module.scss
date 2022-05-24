@@ -64,6 +64,10 @@
                     color: $regWhite;
                     margin-bottom: 2.5rem;
 
+                    a{
+                        color: $regWhite;
+                    }
+
                     &:last-child{
                         margin-bottom: 0;
                         font-weight: bold;

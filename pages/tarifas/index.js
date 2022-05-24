@@ -24,6 +24,8 @@ export default function Tarifas({ tarifas }) {
         <>
             <Head>
                 <title>Tarifas | PerroBueno</title>
+                <meta name="keywords" content="Guarderia de día, Adiestramiento profesional, Estancias diarias diurnas, Educación, Peluqueria" />
+                <meta name="description" content="PerroBueno fue creado por amantes de los animales, para darles un servicio personalizado. En nuestras instalaciones no verás a tu perro encerrado, es un lugar especial para que disfruten mientras tu realizas tus obligaciones, trabajo, recados o te vas a las vacaciones deseadas y no puedes llevarle contigo." />
             </Head>
             <Layout hero={tarifas.hero}>
                 <section id='tarifas' className={`container ${styles.tarifas}`}>

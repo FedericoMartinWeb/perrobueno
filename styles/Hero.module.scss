@@ -51,9 +51,11 @@
         }
         
         .hero__chevron{
-            margin-top: 6rem;
-            animation: MoveUpDown 1s linear infinite;
-            
+            animation: MoveUpDown 2s linear infinite;
+            position: absolute;
+            bottom: -6rem;
+            left: 50%;
+
             svg{
                 color: #C9C8C8;
                 font-size: 3.5rem;
@@ -82,7 +84,6 @@
 
         .content{
             max-width: 73rem;
-            
 
             .hero__chevron{
                 display: none;
@@ -92,8 +93,8 @@
         .hero__chevron__desktop{
             display: block;
             position: absolute;
+            animation: MoveUpDown 2s linear infinite;
             left: 50%;
-            transform: translateX(-50%);
             bottom: 10rem;
             z-index: 2;
             cursor: pointer;
@@ -110,18 +111,14 @@
 // Animations
 @keyframes MoveUpDown {
     0% {
-        bottom: 10rem;
+        transform: translateY(-3px) translateX(-50%);
     }
 
-    25% {
-        bottom: 8rem;
+    50% {
+        transform: translateY(3px) translateX(-50%);
     }
 
-    50%{
-        bottom: 10rem;
-    }
-    
     100% {
-        bottom: 11rem;
+        transform: translateY(-3px) translateX(-50%);
     }
 }

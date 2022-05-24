@@ -7,7 +7,7 @@ import styles from '../styles/Contact.module.scss'
 // Components
 import { HalfCircle } from '../components/'
 
-const Contact = () => {
+const Contact = ({contact}) => {
     const form = useRef();
 
     const submitValue = (message) => {
@@ -39,7 +39,7 @@ const Contact = () => {
             <HalfCircle className={styles.half} color='#4344C3' top up />
 
             <div className={`row ${styles.wrapper}`}>
-                <h2>Contacto</h2>
+                <h2>{contact.title}</h2>
 
                 <div className={styles.content}>
                     <form className={styles.form} ref={form} onSubmit={sendEmail}>
@@ -49,10 +49,7 @@ const Contact = () => {
                         <input type="submit" value="Enviar" />
                     </form>
 
-                    <div className={styles.description}>
-                        <p>Todos los servicios de esta pagina web los puedes consultar por teléfono y concretar cita al 627 74 19 47 o también whatsapp.</p>
-                        <p>No dejes a tu perro solo en casa cuando sales a trabajar, nosotros nos encargamos de él y lo recogemos en tu casa!</p>
-                    </div>
+                    <div className={styles.description} dangerouslySetInnerHTML={{ __html: contact.description }}></div>
                 </div>
             </div>
         </section>

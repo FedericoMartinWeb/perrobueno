@@ -47,7 +47,7 @@ export const homepage = {
                     "id": 1,
                     "secId": 'guarderia',
                     "title": "Guardería",
-                    "description": "Un miembro de nuestro equipo estará en todo momento con ellos para guiar los juegos, vigilar que todo vaya bien y que ningún perro sea excluido. \n\nNos encargamos de controlar el estado vacunal de todos los perros que acudan a nuestro centro para asegurarnos de que todos están sanos y seguros. Hacemos traslado puerta a puerta cada mañana con una ruta fija desde primera hora ya estamos en ruta canina para que pasen la mayor cantidad de tiempo haciendo ejercicio.",
+                    "description": "<p>Un miembro de nuestro equipo estará en todo momento con ellos para guiar los juegos, vigilar que todo vaya bien y que ningún perro sea excluido.</p> <p>Nos encargamos de controlar el estado vacunal de todos los perros que acudan a nuestro centro para asegurarnos de que todos están sanos y seguros. Hacemos traslado puerta a puerta cada mañana con una ruta fija desde primera hora ya estamos en ruta canina para que pasen la mayor cantidad de tiempo haciendo ejercicio.</p>",
                     "image": "guarderia",
                     "altImage": "dogshowcase1"
                 },
@@ -55,7 +55,8 @@ export const homepage = {
                     "id": 2,
                     "secId": 'educacion',
                     "title": "Educación",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.",
+                    "description": "<p>Como todos nuestros servicios, además de ser personalizados, trabajamos desde el respeto a los animales.</p><p>Y en la educación, como en cualquier ser vivo es importante trabajar con respeto y paciencia. Damos soporte a las familias en todas las etapas de vuestros peludos, porque para ti es importante, para nosotros también.</p><p>Damos mucha importancia a la educación de cachorros, como en la ayuda a los perros de edad avanzada que tienen problemas de comportamiento, ya sea por malas experiencias o por consentimiento en casa.</p>",
+                    "descriptionHide": "<p>Perrobueno, en un principio siempre busca trabajar con las familias y las mascotas, de manera presencial en casa, barrio, parque o donde este el problema, para solucionarlo en equipo, y que las familias sepan como ayudar al peludo independientemente de la gravedad del problema del perro.</p><p>En casos más complicados, donde hay peligro en casa, para perros convivientes o miembros de la familia, no nos damos por vencidos, tenemos opciones mas especificas y completas para trabajar con el peludo fuera del entorno familiar y del domicilio.</p><p>ecemos un servicio de hospedaje y educación especifica y una vez avanzado en el “problema” de comportamiento, hacemos un traspaso a las familias para encajar todas las piezas.</p><p><b>*este servicio, de educación y alojamiento, solo se da en casos de que nuestro profesional lo considere necesario, en todos los casos se realiza un diagnostico previo, analizando la situación familiar y el estado del perro.</b></p><p>Siempre intentaremos encontrar la manera mas asertiva y efectiva a la hora de trabajar con tu perro, no todos los perros necesitan la misma solución, ni tienen los mismos problemas, buscaremos la forma de estabilizar la convivencia en casa y en todos los entornos para que la vida con tu peludo sea lo que siempre has querido.</p>",
                     "image": "perro_5",
                     "altImage": "dogshowcase2"
                 },
@@ -63,7 +64,8 @@ export const homepage = {
                     "id": 3,
                     "secId": 'peluqueria',
                     "title": "Peluquería",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.",
+                    "description": "<p>Nuestra peluquería canina @perrobuenopetshop trabaja con un sistema para minimizar el nivel de estress de los perros y gatos en su momento de aseo.</p><h4>¿Qué es la peluquería de bajo Estrés?</h4><p>Es una peluquería donde prima el bienestar emocional del animal, para ello eliminamos o minimizamos todos los puntos estresantes de la sesión de peluquería. Por ello nos hemos formado en Educación canina en positivo y asistencia técnica veterinaria y realizamos las sesiones en un entorno amable. </p>",
+                    "descriptionHide": "<p>No se utilizan jaulas de espera, no se utilizan cabinas de secado, no hay más perros en la misma sala, no se utilizan correcciones ni castigos, se interpretan las señales que realiza el perro para saber hasta dónde podemos llegar en nuestros manipulados.</p><p>Hacemos uso de aromaterapia, musicoterapia, premios, juguetes, descansos, y el responsable del animal puede estar si así lo desea durante la sesión.</p><p>Todas las citas las gestionamos con cita previa para que tu peludo se sienta único como cuando tu vas a la peluqueria. Para citas e información debes de comunicarte al <a href='tel:635222254'>635222254</a> y Patricia estará encantada de informarte de todo.</p><p>Nuestro centro esta ubicado en Madrid, el Legazpi, en la calle paseo del molino 17.</p><p>Y nuestro Instagram <a target='_blank' href='https://www.instagram.com/perrobuenopetshop/?hl=es'>@perrobuenopetshop</a></p>",
                     "image": "educacion3",
                     "altImage": "dogshowcase3"
                 }
@@ -127,7 +129,7 @@ export const homepage = {
             "contact": {
                 "id": 1,
                 "title": "Contacto",
-                "description": "Todos los servicios de esta pagina web los puedes consultar por teléfono y concretar cita al 627 74 19 47 o también whatsapp.\n\nNo dejes a tu perro solo en casa cuando sales a trabajar, nosotros nos encargamos de él y lo recogemos en tu casa!"
+                "description": "<p>Todos los servicios de esta pagina web los puedes consultar por teléfono y concretar cita al <a href='tel: 627 74 19 47'>627 74 19 47</a> o también whatsapp.</p><p>No dejes a tu perro solo en casa cuando sales a trabajar, nosotros nos encargamos de él y lo recogemos en tu casa!</p>"
             }
         }
     }

@@ -17,7 +17,7 @@ const HomeVets = ({ homevets }) => {
 
             <div className={`row ${styles.wrapper}`}>
                 <figure>
-                    <img src={images[homevets.logoname].src} alt="" />
+                    <a target="_blank" href="http://www.bigvete.es/"><img src={images[homevets.logoname].src} alt="bigvete.es" /></a>
                 </figure>
 
                 <p>{homevets.description}</p>
