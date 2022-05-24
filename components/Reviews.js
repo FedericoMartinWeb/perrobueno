@@ -58,7 +58,7 @@ const Reviews = ({ reviews }) => {
 
                 <article className={styles.content}>
                     <figure className={styles.google__img}>
-                        <a href="https://www.google.com/search?q=perrobueno+madrid&oq=perrobueno+madrid&aqs=chrome.0.69i59.4111j0j7&sourceid=chrome&ie=UTF-8#lrd=0xd4194355d63e197:0x66aa4156ece2a4a0,1,,," target='_blank'><img src={images.google.src} alt="google" /></a>
+                        <a href="https://www.google.com/search?q=perrobueno+madrid&oq=perrobueno+madrid&aqs=chrome.0.69i59.4111j0j7&sourceid=chrome&ie=UTF-8#lrd=0xd4194355d63e197:0x66aa4156ece2a4a0,1,,," rel="noreferrer" target='_blank'><img src={images.google.src} alt="google" /></a>
                     </figure>
 
                     <h2>PerroBueno</h2>
