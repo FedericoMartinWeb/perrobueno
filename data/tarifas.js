@@ -62,25 +62,25 @@ export const tarifas = {
                         }
                     ]
                 },
+                // {
+                //     "id": 5,
+                //     "title": "Servicio de Peluquería",
+                //     "availability": [
+                //         {
+                //             "id": 1,
+                //             "days": "Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum.",
+                //             "price": "20"
+                //         }
+                //     ]
+                // },
                 {
                     "id": 5,
-                    "title": "Servicio de Peluquería",
-                    "availability": [
-                        {
-                            "id": 1,
-                            "days": "Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum.",
-                            "price": "20"
-                        }
-                    ]
-                },
-                {
-                    "id": 6,
                     "title": "Vacaciones",
                     "availability": [
                         {
                             "id": 1,
-                            "days": "Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum.",
-                            "price": "20"
+                            "days": "Para mas información contactanos!",
+                            "price": "Consultar"
                         }
                     ]
                 }
