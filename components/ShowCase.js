@@ -26,7 +26,7 @@ const ShowCase = ({ showcase }) => {
                     {showcase.descriptionHide && <a className={styles.readmore} onClick={handleRead}>{!isMore ? 'Ver Más' : 'Ver Menos'}</a>}
                 </div>
 
-                <figure>
+                <figure className={showcase.id === 3 ? `${styles.top}` : ''}>
                     <img src={images[showcase.image].src} alt={showcase.altImage} />
                 </figure>
 

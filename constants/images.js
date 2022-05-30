@@ -28,6 +28,9 @@ import review3 from '../assets/images/reviews/review3.png'
 import review4 from '../assets/images/reviews/review4.png'
 import review5 from '../assets/images/reviews/review5.png'
 import review6 from '../assets/images/reviews/review6.png'
+import newherohome from '../assets/images/newherohome.jpeg'
+import pelu1 from '../assets/images/pelu1.jpeg'
+import worker from '../assets/images/worker.jpeg'
 
 export default {
     educacion3,
@@ -59,5 +62,8 @@ export default {
     review3,
     review4,
     review5,
-    review6
+    review6,
+    newherohome,
+    pelu1,
+    worker
 }

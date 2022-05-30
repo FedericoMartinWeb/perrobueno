@@ -57,6 +57,12 @@
                 object-fit: cover;
                 object-position: center center;
             }
+
+            &.top{
+                img{
+                    object-position: top center;
+                }
+            }
         }
     }
 
