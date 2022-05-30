@@ -15,12 +15,12 @@ export const tarifas = {
                         {
                             "id": 1,
                             "days": "Lunes a Viernes",
-                            "price": "300"
+                            "price": "350"
                         },
                         {
                             "id": 2,
                             "days": "Lunes a Jueves",
-                            "price": "260"
+                            "price": "300"
                         }
                     ]
                 },
