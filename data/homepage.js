@@ -40,7 +40,7 @@ export const homepage = {
                 "id": 1,
                 "logoname": "logoblanco",
                 "description": "Home vets by Bigvete SL con sus vehículos de atención a domicilio, totalmente equipados ofrece TODOS los servicios veterinarios para tu mascota.",
-                "videoUrl": "https://www.youtube.com/embed/yPsPWXjjxhk?rel=0&amp;showinfo=0"
+                "videoUrl": "https://www.youtube.com/embed/ygBsGL4T_UU?rel=0&amp;showinfo=0"
             },
             "showcase": [
                 {
@@ -57,7 +57,7 @@ export const homepage = {
                     "title": "Educación",
                     "description": "<p>Como todos nuestros servicios, además de ser personalizados, trabajamos desde el respeto a los animales.</p><p>Y en la educación, como en cualquier ser vivo es importante trabajar con respeto y paciencia. Damos soporte a las familias en todas las etapas de vuestros peludos, porque para ti es importante, para nosotros también.</p><p>Damos mucha importancia a la educación de cachorros, como en la ayuda a los perros de edad avanzada que tienen problemas de comportamiento, ya sea por malas experiencias o por consentimiento en casa.</p>",
                     "descriptionHide": "<p>Perrobueno, en un principio siempre busca trabajar con las familias y las mascotas, de manera presencial en casa, barrio, parque o donde este el problema, para solucionarlo en equipo, y que las familias sepan como ayudar al peludo independientemente de la gravedad del problema del perro.</p><p>En casos más complicados, donde hay peligro en casa, para perros convivientes o miembros de la familia, no nos damos por vencidos, tenemos opciones mas especificas y completas para trabajar con el peludo fuera del entorno familiar y del domicilio.</p><p>Ofrecemos un servicio de hospedaje y educación especifica y una vez avanzado en el “problema” de comportamiento, hacemos un traspaso a las familias para encajar todas las piezas.</p><p><b>*este servicio, de educación y alojamiento, solo se da en casos de que nuestro profesional lo considere necesario, en todos los casos se realiza un diagnostico previo, analizando la situación familiar y el estado del perro.</b></p><p>Siempre intentaremos encontrar la manera mas asertiva y efectiva a la hora de trabajar con tu perro, no todos los perros necesitan la misma solución, ni tienen los mismos problemas, buscaremos la forma de estabilizar la convivencia en casa y en todos los entornos para que la vida con tu peludo sea lo que siempre has querido.</p>",
-                    "image": "worker",
+                    "image": "educacion1",
                     "altImage": "dogshowcase2"
                 },
                 {

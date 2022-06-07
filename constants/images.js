@@ -31,6 +31,7 @@ import review6 from '../assets/images/reviews/review6.png'
 import newherohome from '../assets/images/newherohome.jpeg'
 import pelu1 from '../assets/images/pelu1.jpeg'
 import worker from '../assets/images/worker.jpeg'
+import educacion1 from '../assets/images/educacion1.jpeg'
 
 export default {
     educacion3,
@@ -65,5 +66,6 @@ export default {
     review6,
     newherohome,
     pelu1,
-    worker
+    worker,
+    educacion1
 }
