@@ -71,6 +71,7 @@ const Nav = () => {
 
                     <ul>
                         <li> {renderMenuNav('servicios', 'Servicios')} </li>
+                        <li> {renderMenuNav('quienes', 'Quienes Somos')} </li>
                         <li> {renderMenuNav('guarderia', 'Guardería')} </li>
                         <li> {renderMenuNav('educacion', 'Educación')} </li>
                         <li> {renderMenuNav('peluqueria', 'Peluquería')} </li>

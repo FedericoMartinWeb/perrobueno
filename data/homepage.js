@@ -49,6 +49,15 @@ export const homepage = {
             showcase: [
                 {
                     id: 1,
+                    secId: "quienes",
+                    title: "Quienes Somos",
+                    description:
+                        "<p>Un miembro de nuestro equipo estará en todo momento con ellos para guiar los juegos, vigilar que todo vaya bien y que ningún perro sea excluido.</p> <p>Nos encargamos de controlar el estado vacunal de todos los perros que acudan a nuestro centro para asegurarnos de que todos están sanos y seguros. Hacemos traslado puerta a puerta cada mañana con una ruta fija desde primera hora ya estamos en ruta canina para que pasen la mayor cantidad de tiempo haciendo ejercicio.</p>",
+                    image: ["guarderia", "educacion1"],
+                    altImage: ["dogshowcase1", "educacion1"],
+                },
+                {
+                    id: 2,
                     secId: "guarderia",
                     title: "Guardería",
                     description:
@@ -57,7 +66,7 @@ export const homepage = {
                     altImage: ["dogshowcase1"],
                 },
                 {
-                    id: 2,
+                    id: 3,
                     secId: "educacion",
                     title: "Educación",
                     description:
@@ -68,7 +77,7 @@ export const homepage = {
                     altImage: ["educacion1"],
                 },
                 {
-                    id: 3,
+                    id: 4,
                     secId: "peluqueria",
                     title: "Peluquería",
                     description:
