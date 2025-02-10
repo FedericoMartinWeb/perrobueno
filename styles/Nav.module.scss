@@ -47,11 +47,14 @@
         }
 
         ul{
-            
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
             li{
                 text-align: left;
                 padding: 2rem 0;
                 border-bottom: 2px solid $mainRed;
+                font-weight: 400;
+                margin-bottom: 0;
 
                 a{
                     font-size: 2rem;

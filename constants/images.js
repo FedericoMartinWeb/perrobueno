@@ -32,6 +32,7 @@ import newherohome from '../assets/images/newherohome.jpeg'
 import pelu1 from '../assets/images/pelu1.jpeg'
 import worker from '../assets/images/worker.jpeg'
 import educacion1 from '../assets/images/educacion1.jpeg'
+import cotyquienes from '../assets/images/cotyquienes.jpg'
 
 export default {
     educacion3,
@@ -67,5 +68,6 @@ export default {
     newherohome,
     pelu1,
     worker,
-    educacion1
+    educacion1,
+    cotyquienes
 }

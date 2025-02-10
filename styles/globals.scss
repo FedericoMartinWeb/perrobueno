@@ -42,6 +42,19 @@ p{
     line-height: 2.8rem;
 }
 
+ul,ol{
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+
+    li{
+        color: $mainBlack;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+        margin-bottom: 1rem;
+    }
+}
+
 @include atMediumLarge{
     h1{
         font-size: 6.1rem;
