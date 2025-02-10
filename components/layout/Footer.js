@@ -22,7 +22,7 @@ const Footer = () => {
                         <a rel="noreferrer" href='https://www.twitter.com/perrobueno_es/' target='_blank'><AiOutlineTwitter /></a>
                         <a rel="noreferrer" href='https://www.facebook.com/perrobueno.es/' target='_blank'><AiOutlineFacebook /></a>
                     </address>
-                    <p>Copyright © 2022 </p>
+                    <p>Copyright © 2025 </p>
                     <p>All rights reserved.</p>
                 </div>
             </div>
