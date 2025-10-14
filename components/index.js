@@ -3,6 +3,7 @@ import Nav from "./layout/Nav";
 import Footer from "./layout/Footer";
 import Hero from "./layout/Hero";
 import Services from "./Services";
+import ServicesVideo from "./ServicesVideo";
 import HalfCircle from "./HalfCircle";
 import HomeVets from "./HomeVets";
 import ShowCase from "./ShowCase";
@@ -19,6 +20,7 @@ export {
     Footer,
     Hero,
     Services,
+    ServicesVideo,
     HalfCircle,
     HomeVets,
     ShowCase,
