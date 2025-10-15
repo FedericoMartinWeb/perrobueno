@@ -19,22 +19,22 @@ export const homepage = {
                     {
                         id: 1,
                         alt: "perrobueno1",
-                        image: "tarifas",
+                        image: "video-1",
                     },
                     {
                         id: 2,
                         alt: "perrobueno2",
-                        image: "perro_8",
+                        image: "video-2",
                     },
                     {
                         id: 3,
                         alt: "perrobueno3",
-                        image: "educacion2",
+                        image: "video-3",
                     },
                     {
                         id: 4,
                         alt: "perrobueno4",
-                        image: "perro_9",
+                        image: "video-4",
                     },
                 ],
             },

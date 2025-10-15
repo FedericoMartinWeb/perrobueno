@@ -22,14 +22,12 @@ const Services = ({ services }) => {
         perPage: 1,
         arrows: 2,
         perMove: 1,
-        fixedHeight: '33.1rem',
+        gap: '2rem',
         breakpoints: {
             768: {
-                fixedHeight: '49rem'
             },
             1024: {
-                fixedHeight: '49rem',
-                perPage: 2
+                perPage: 3
             }
         }
     };
@@ -60,7 +58,12 @@ const Services = ({ services }) => {
 
                         {services.slider.map(slide => (
                             <SplideSlide key={slide.id}>
-                                <img src={images[slide.image].src} alt={slide.alt} />
+                                {/* <img src={images[slide.image].src} alt={slide.alt} /> */}
+                                <video
+                                    className={styles.video}
+                                    src={`/videos/${slide.image}.mp4`}
+                                    controls
+                                />
                             </SplideSlide>
                         ))}
                     </Splide>

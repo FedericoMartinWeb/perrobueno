@@ -31,6 +31,7 @@ export default function Home({ homepage }) {
                     <ShowCase key={item.id} showcase={item} />
                 ))}
                 <Holiday holiday={homepage.holiday} />
+                <Services services={homepage.services} />
                 <Reviews reviews={homepage.reviews} />
                 <Teaming teaming={homepage.teaming} />
                 <Contact contact={homepage.contact}/>
