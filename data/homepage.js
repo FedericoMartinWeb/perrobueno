@@ -8,33 +8,41 @@ export const homepage = {
                 subtitle: "¡Tu perro al cole!",
                 image: "newherohome",
             },
-            services: {
+            servicesVideo: {
                 id: 1,
                 title: "Servicios",
                 descriptionFirst:
                     "PerroBueno fue creado por amantes de los animales para darles un servicio personalizado. Es un lugar especial para que disfruten mientras tú realizas tus obligaciones o te vas a tus vacaciones deseadas y no puedes llevarle contigo.",
                 descriptionSecond:
                     "Contamos con un lugar apropiado para poder tener a los perros como en casa, con espacio suficiente e instalaciones preparadas para todo tipo de perros (piscina incluida en verano).",
+            },
+            services: {
+                id: 1,
+                title: "Conocenos un poco mas...",
                 slider: [
                     {
                         id: 1,
                         alt: "perrobueno1",
                         image: "video-1",
+                        poster: "pelu1"
                     },
                     {
                         id: 2,
                         alt: "perrobueno2",
                         image: "video-2",
+                        poster: "pelu1"
                     },
                     {
                         id: 3,
                         alt: "perrobueno3",
                         image: "video-3",
+                        poster: "pelu1"
                     },
                     {
                         id: 4,
                         alt: "perrobueno4",
                         image: "video-4",
+                        poster: "pelu1"
                     },
                 ],
             },

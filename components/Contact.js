@@ -36,7 +36,7 @@ const Contact = ({contact}) => {
     return (
         <section id='contacto' className={`container ${styles.contact}`}>
 
-            <HalfCircle className={styles.half} color='#4344C3' top up />
+            <HalfCircle className={styles.half} color='#D95151' top up />
 
             <div className={`row ${styles.wrapper}`}>
                 <h2>{contact.title}</h2>

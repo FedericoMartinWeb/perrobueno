@@ -24,7 +24,7 @@ const Holiday = ({ holiday }) => {
                 <p>{holiday.description}</p>
             </div>
 
-            <HalfCircle color='#fafafa' />
+            <HalfCircle color='#4344C3'  />
         </section>
     )
 }

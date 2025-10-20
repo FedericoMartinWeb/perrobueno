@@ -2,7 +2,7 @@
 @import './mixins';
 
 .reviews{
-    padding-top: 5.6rem;
+    padding-top: 8.6rem;
 
     .wrapper{
         padding: 0;
@@ -65,7 +65,7 @@
     }
 
     @include atMediumLarge{
-        padding-top: 11.4rem;
+        padding-top: 16.4rem;
 
         .wrapper{
             display: flex;

@@ -2,7 +2,7 @@
 @import './mixins';
 
 .contact{
-    background-color: $mainBlue;
+    background-color: $mainRed;
     position: relative;
     padding-top: 8.8rem;
     padding-bottom: 12rem;
@@ -19,7 +19,7 @@
             .form{
                 input, textarea{
                     border: 3px solid $regWhite;
-                    background-color: $mainBlue;
+                    background-color: $mainRed;
                     padding: 2rem;
                     display: block;
                     width: 100%;

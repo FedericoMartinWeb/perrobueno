@@ -10,6 +10,9 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import '@splidejs/splide/dist/css/splide.min.css';
 import styles from '../styles/Services.module.scss'
 
+// Components
+import { HalfCircle } from '../components/'
+
 // Images
 import images from '../constants/images'
 
@@ -44,7 +47,7 @@ const Services = ({ services }) => {
     );
 
     return (
-        <section id='servicios' className={`container ${styles.services}`}>
+        <section id='servicios' className={`container ${styles.services} ${styles.hasBlueBg}`}>
             <div className={`row ${styles.wrapper}`}>
 
                 <article className={styles.content}>
@@ -62,6 +65,7 @@ const Services = ({ services }) => {
                                 <video
                                     className={styles.video}
                                     src={`/videos/${slide.image}.mp4`}
+                                    poster={images[slide.poster].src}
                                     controls
                                 />
                             </SplideSlide>
@@ -69,6 +73,7 @@ const Services = ({ services }) => {
                     </Splide>
                 </div>
             </div>
+            <HalfCircle color='#4344C3' down />
         </section>
     )
 }

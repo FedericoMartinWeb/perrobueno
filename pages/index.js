@@ -25,7 +25,7 @@ export default function Home({ homepage }) {
                 <meta name="description" content="PerroBueno fue creado por amantes de los animales, para darles un servicio personalizado. En nuestras instalaciones no verás a tu perro encerrado, es un lugar especial para que disfruten mientras tu realizas tus obligaciones, trabajo, recados o te vas a las vacaciones deseadas y no puedes llevarle contigo." />
             </Head>
             <Layout hero={homepage.hero}>
-                <ServicesVideo services={homepage.services} />
+                <ServicesVideo services={homepage.servicesVideo} />
                 <HomeVets homevets={homepage.homevets} />
                 {homepage.showcase.map(item => (
                     <ShowCase key={item.id} showcase={item} />

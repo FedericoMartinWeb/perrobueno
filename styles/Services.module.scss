@@ -4,6 +4,31 @@
 .services{
     padding-top: 9.7rem;
     padding-bottom: 6.1rem;
+    position: relative;
+
+    &.hasBlueBg {
+        background-color: $mainBlue;
+        padding-bottom: 8.1rem;
+        padding-top: 6.7rem;
+        
+        @include atMediumLarge{
+            padding-bottom: 9rem;
+        }
+
+        .content{
+            h2, p{
+                color: $regWhite !important;
+            }
+        }
+
+        .splide__arrow{
+            svg{
+                path{
+                    fill: $regWhite !important;
+                }
+            }
+        }
+    }
 
     .wrapper{
         padding: 0;
