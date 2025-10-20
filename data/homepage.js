@@ -24,25 +24,37 @@ export const homepage = {
                         id: 1,
                         alt: "perrobueno1",
                         image: "video-1",
-                        poster: "pelu1"
+                        poster: "video1"
                     },
                     {
                         id: 2,
                         alt: "perrobueno2",
                         image: "video-2",
-                        poster: "pelu1"
+                        poster: "video2"
                     },
                     {
                         id: 3,
                         alt: "perrobueno3",
                         image: "video-3",
-                        poster: "pelu1"
+                        poster: "video3"
                     },
                     {
                         id: 4,
                         alt: "perrobueno4",
                         image: "video-4",
-                        poster: "pelu1"
+                        poster: "video4"
+                    },
+                    {
+                        id: 5,
+                        alt: "perrobueno5",
+                        image: "video-5",
+                        poster: "video5"
+                    },
+                    {
+                        id: 6,
+                        alt: "perrobueno6",
+                        image: "video-6",
+                        poster: "video6"
                     },
                 ],
             },

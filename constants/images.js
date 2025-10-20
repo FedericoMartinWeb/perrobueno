@@ -33,6 +33,12 @@ import pelu1 from '../assets/images/pelu1.jpeg'
 import worker from '../assets/images/worker.jpeg'
 import educacion1 from '../assets/images/educacion1.jpeg'
 import cotyquienes from '../assets/images/cotyquienes.jpg'
+import video1 from '../assets/images/videos/video-1.png'
+import video2 from '../assets/images/videos/video-2.png'
+import video3 from '../assets/images/videos/video-3.png'
+import video4 from '../assets/images/videos/video-4.png'
+import video5 from '../assets/images/videos/video-5.png'
+import video6 from '../assets/images/videos/video-6.png'
 
 export default {
     educacion3,
@@ -65,6 +71,12 @@ export default {
     review4,
     review5,
     review6,
+    video1,
+    video2,
+    video3,
+    video4,
+    video5,
+    video6,
     newherohome,
     pelu1,
     worker,
