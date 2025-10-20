@@ -4,6 +4,9 @@ import React from 'react'
 import '@splidejs/splide/dist/css/splide.min.css';
 import styles from '../styles/Services.module.scss'
 
+// Images 
+import images from '../constants/images'
+
 const ServicesVideo = ({ services }) => {
 
     return (
@@ -19,6 +22,7 @@ const ServicesVideo = ({ services }) => {
                 <video
                     className={styles.video}
                     src="/videos/video-promocional.mp4"
+                    poster={images[services.image].src}
                     autoPlay
                     controls
                     loop

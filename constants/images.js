@@ -39,6 +39,7 @@ import video3 from '../assets/images/videos/video-3.png'
 import video4 from '../assets/images/videos/video-4.png'
 import video5 from '../assets/images/videos/video-5.png'
 import video6 from '../assets/images/videos/video-6.png'
+import videopromo from '../assets/images/videos/video-promo.png'
 
 export default {
     educacion3,
@@ -77,6 +78,7 @@ export default {
     video4,
     video5,
     video6,
+    videopromo,
     newherohome,
     pelu1,
     worker,

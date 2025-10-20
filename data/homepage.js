@@ -11,6 +11,7 @@ export const homepage = {
             servicesVideo: {
                 id: 1,
                 title: "Servicios",
+                image: "videopromo",
                 descriptionFirst:
                     "PerroBueno fue creado por amantes de los animales para darles un servicio personalizado. Es un lugar especial para que disfruten mientras tú realizas tus obligaciones o te vas a tus vacaciones deseadas y no puedes llevarle contigo.",
                 descriptionSecond:
